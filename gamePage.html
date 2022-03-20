@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="gamePage.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="topic-selectBar">
+		<h2 id = "topic">Choose a topic:</h2>
+		<div id = "topicDropdown" class="topic-dropdown">
+		  <button onclick="topicDropdownFun()" class="topic-dropbtn">Click me</button>
+		  <div id="topicDropdownContent" class="topic-dropdown-content hide">
+		    <button onclick="showTopic('1')">Economic crisis</button>
+		    <button onclick="showTopic('2')">topic 2</button>
+		    <button onclick="showTopic('3')">topic 3</button>
+		  </div>
+		</div>
+	</div>
+
+	<!-------------------------------------
+		# Topic Content 
+	--------------------------------------->
+	<!-- Topic 1 ---------->
+	<div id="topicContent1" class="topic-content hide">
+		<h2>Economic crisis</h2>
+		<img src="img/img.png" class="topic-img">
+		<div class="topic-description">
+			<p>The world economy became depressed because of a financial crisis. People's consumption concept has become cautious and conservative. Which technology would you choose to encourage people to visit your museum under this circumstance?</p>
+		</div>	
+	    <!-- Next Button ---------->
+		<div>
+			<button class="nextBtn" onclick="showSelectionPage('1')">Next >> </button>
+		</div>
+	</div>
+
+	<!-- Topic 2 ---------->
+	<div id="topicContent2" class="topic-content hide">
+		<h2>Topic</h2>
+		<img src="img/img.png" class="topic-img">
+		<div>
+			<p>xxxxxxx</p>
+		</div>	
+
+	    <!-- Next Button ---------->
+		<div>
+			<button class="nextBtn " onclick="showSelectionPage('2')">Next >> </button>
+		</div>
+	</div>
+
+	<!-- Topic 3 ---------->
+	<div id="topicContent3" class="topic-content hide">
+		<h2>Topic</h2>
+		<img src="img/img.png" class="topic-img">
+		<div>
+			<p>xxxx</p>
+		</div>	
+	    <!-- Next Button ---------->
+		<div>
+			<button class="nextBtn " onclick="showSelectionPage('3')">Next >> </button>
+		</div>	
+	</div>
+
+	<!-------------------------------------
+		# Selection
+	--------------------------------------->
+	<div class="selectionDiv">
+		<button onclick="showStartGamePage('AR')">
+			<img src="img/icons/AR.png">
+			<h3>AR</h3>
+		</button>
+		<button onclick="showStartGamePage('AR/VR')">
+			<img src="img/icons/VR.png">
+			<h3>VR</h3>
+		</button>
+	</div>
+
+	<div class="selectionDiv">
+		<button onclick="showStartGamePage('AI')">
+			<img src="img/icons/AI.png">
+			<h3>AI</h3>
+		</button>
+		<button onclick="showStartGamePage('BlockChain')">
+			<img src="img/icons/BlockChain.png">
+			<h3>Blockchain</h3>
+		</button>
+	</div>
+
+	<div class="selectionDiv">
+		<button onclick="showStartGamePage('Kinect')">
+			<img src="img/icons/Kinect.png">
+			<h3>Kinect</h3>
+		</button>
+		<button onclick="showStartGamePage('Streaming')">
+			<img src="img/icons/Streaming.png">
+			<h3>Streaming</h3>
+		</button>
+	</div>
+
+	<!-------------------------------------
+		# StartGamePage
+	--------------------------------------->
+	<div id= "startGamePage" class="container hide">
+		<h2>Your tech industry:</h2>
+		<div class="choice">
+			<h1 id="choiceText"></h1>
+		</div>
+		<h2>Find someone to begin your game!</h2>
+		<button onclick="showGamePage1()"> Start the game</button>
+	</div>
+
+	<!-------------------------------------
+		# GamePage : include 2 page
+	--------------------------------------->
+	<div id= "GamePage" class="hide">
+		<!-------------------------------------
+			# GamePage1 - add opponents & timer
+		--------------------------------------->
+	 	<div id="GamePage1" class="showIndustry ">
+			<div class="chosenindustry-title" >
+				<h3>Your tech industry:</h3>
+			</div>
+		
+			<div class="industry-showArea">
+				<div class="chosenindustry-name">
+					<h3 id="choiceText2">AR</h3>
+				</div>
+			</div>
+		
+			<div class="chosenindustry-title" >
+				<h3>Your opponents:</h3>
+			</div>
+		
+			<!-- Select opponent box -------------------------------------->
+			<div class ="oppChoiceContents">
+				<button class="opp-choice" onclick="addOpponent(1)">
+					<img src="img/plus.png" id="opponentImg1" class ="plusImg" >
+					<h3 id="opponentText1" class="hide"></h3>
+				</button>
+
+				<button class="opp-choice" onclick="addOpponent(2)">
+					<img src="img/plus.png" id="opponentImg2" class ="plusImg" >
+					<h3 id="opponentText2" class="hide"></h3>
+				</button>
+
+				<button class="opp-choice" onclick="addOpponent(3)">
+					<img src="img/plus.png" id="opponentImg3" class ="plusImg" >
+					<h3 id="opponentText3" class="hide"></h3>
+				</button>
+
+				<button class="opp-choice" onclick="addOpponent(4)">
+					<img src="img/plus.png" id="opponentImg4" class ="plusImg" >
+					<h3 id="opponentText4" class="hide"></h3>
+				</button>
+			</div> <!-- End of Select opponent box -------------------------------------->
+		</div>
+
+		<!-- The popup select opponent box -------------------------------------->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<div class="popupSelection">
+				<button onclick="addOpponentChoice('AR')">AR</button>
+				<button onclick="addOpponentChoice('VR')">VR</button>
+				<button onclick="addOpponentChoice('AI')">AI</button>
+				<button onclick="addOpponentChoice('Blockchain')">Blockchain</button>
+				<button onclick="addOpponentChoice('Kinect')">Kinect</button>
+				<button onclick="addOpponentChoice('Streaming')">Streaming</button>
+			</div>
+		  </div>
+
+		</div> <!-- End of The popup select opponent box ----------------------->
+
+
+		<!-------------------------------------
+			# GamePage2 - vote area
+		--------------------------------------->
+		<div id= "GamePage2" class="voteArea hide">
+			<div class = "vote-title" >
+				<h3>Choose the most convincing one</h3>
+			</div>
+	
+			<div class ="voteContents">
+				<div class = "vote-choice">
+					<h3 id="vote1">none</h3>
+					<button onclick="showVoteResult(1)">vote</button>
+				</div>
+				<div class = "vote-choice">
+					<h3 id="vote2">none</h3>
+					<button onclick="showVoteResult(2)">vote</button>
+				</div>
+				<div class = "vote-choice">
+					<h3 id="vote3">none</h3>
+					<button onclick="showVoteResult(3)">vote</button>
+				</div>
+				<div class = "vote-choice">
+					<h3 id="vote4">none</h3>
+					<button onclick="showVoteResult(4)">vote</button>
+				</div>
+			</div>
+		</div>
+
+		<!-------------------------------------
+			# GamePage1&2 - Timer
+		--------------------------------------->
+		<div class="timecounting">
+			<div class="chosenindustry-title">
+				<h3>Game Time:</h3>
+			</div>
+
+			<div class="chosenindustry-title">
+				<h2 id="timeText">3:00</h2>
+				<!-- <input type="text" id="timeValue" value="0s" readonly> -->
+			</div>
+
+			<div class="buttonContainer">
+				<button id= "startBtn" class="startbutton" onclick="startTimer()"> Start Timer </button>
+				<button id= "endBtn" class="endbutton hide" onclick="stopTimer()"> Stop Timer and Vote</button>
+			</div>
+		</div> <!-- End of Timer-------------------------------------->
+	</div>
+
+	<!-------------------------------------
+		# Result Page
+	--------------------------------------->
+	<div id="ResultPage" class="resultContainer hide">
+		<h2>My choice:</h2>
+		<div class="resultBlock">
+			<h1 id="resultText">Tech</h1>
+		</div>
+		<button onClick="window.location.reload();"> Main menu </button>		
+	</div>
+
+
+</body>
+</html>

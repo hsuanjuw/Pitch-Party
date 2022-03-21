@@ -70,15 +70,15 @@ function showSelectionPage (num){
   hide(TopicContentShown);
 
   if(parseInt(num)==1 ){
-    document.getElementById("topic").innerHTML = "Economic crisis";
+    document.getElementById("topic").innerHTML = "Economic Downturn";
     //alert(num);
   }
   else if(parseInt(num)==2 ){
-    document.getElementById("topic").innerHTML = "Topic 2";
+    document.getElementById("topic").innerHTML = "Climate Science";
     //alert(num);
   } 
   else if(parseInt(num)==3 ){
-    document.getElementById("topic").innerHTML = "Topic 3";
+    document.getElementById("topic").innerHTML = "Women";
     //alert(num);
   } 
 

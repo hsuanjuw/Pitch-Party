@@ -149,7 +149,7 @@ body, html {
 --------------------------------------------------*/
 
 .container{
-  padding-top: 20%;
+  padding-top: 15%;
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
@@ -159,21 +159,33 @@ body, html {
   width: 80%;
   background-color: #f1f1f1;
   margin-top: 15%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
-#startGamePage button{
+.backBtn{
+  background-color: #e3e1e1;
+  border: 2px solid #e3e1e1;
+  border-radius: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-size: 14px;
+  margin-bottom: 3%;
+}
+
+.startGameBtn{
   border: 2px solid #f1f1f1;
   border-radius: 20px;
   padding: 10%;
   background-color: #f1f1f1;
   box-shadow: 3px 10px #e3e1e1;
   font-size: 20px;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 /*--------------------------------------------------

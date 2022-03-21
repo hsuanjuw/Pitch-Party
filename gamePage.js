@@ -98,6 +98,13 @@ function showStartGamePage(choice) {
   show(document.getElementById("startGamePage"));
 }
 
+function backToSelection(){
+  hide(document.getElementById("startGamePage"));
+  var choiceToShow = document.getElementsByClassName("selectionDiv"); //divsToHide is an array
+  for(var i = 0; i < choiceToShow.length; i++){
+      choiceToShow[i].style.display = "flex"; // depending on what you're doing
+  } 
+}
 
 /* --------------------------------------------------------------
  # GamePage 1 - add opponents

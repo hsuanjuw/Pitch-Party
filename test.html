@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="gamePage.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="topic-selectBar">
+		<h2 id = "topic">Choose a topic:</h2>
+		<div id = "topicDropdown" class="topic-dropdown">
+		  <button onclick="topicDropdownFun()" class="topic-dropbtn">Click me</button>
+		  <div id="topicDropdownContent" class="topic-dropdown-content hide">
+		    <button onclick="showTopic('1')">Economic Downturn</button>
+		    <button onclick="showTopic('2')">Climate Science</button>
+		    <button onclick="showTopic('3')">Women</button>
+		  </div>
+		</div>
+	</div>
+
+	<!-------------------------------------
+		# Selection
+	--------------------------------------->
+	<div class="selectionDiv">
+		<button onclick="showStartGamePage('AR')">
+			<img src="img/icons/AR.png">
+			<h3>AR</h3>
+		</button>
+		<button onclick="showStartGamePage('VR')">
+			<img src="img/icons/VR.png">
+			<h3>VR</h3>
+		</button>
+	</div>
+
+	<div class="selectionDiv">
+		<button onclick="showStartGamePage('AI')">
+			<img src="img/icons/AI.png">
+			<h3>AI</h3>
+		</button>
+		<button onclick="showStartGamePage('BlockChain')">
+			<img src="img/icons/BlockChain.png">
+			<h3>Blockchain</h3>
+		</button>
+	</div>
+
+	<div class="selectionDiv">
+		<button onclick="showStartGamePage('Kinect')">
+			<img src="img/icons/Kinect.png">
+			<h3>Kinect</h3>
+		</button>
+		<button onclick="showStartGamePage('Streaming')">
+			<img src="img/icons/Streaming.png">
+			<h3>Streaming</h3>
+		</button>
+	</div>
+
+	<!-------------------------------------
+		# StartGamePage
+	--------------------------------------->
+	<div id= "startGamePage" class="container hide ">
+		<h2>Your tech industry:</h2>
+		<div class="choice">
+			<h1 id="choiceText">AR</h1>
+		</div>
+		<button class="backBtn" onclick="backToSelection()">Choose another industry</button>
+		<h2>Find someone to begin your game!</h2>
+		<button class="startGameBtn" onclick="showGamePage1()"> Start the game</button>
+	</div>
+
+
+
+</body>
+</html>

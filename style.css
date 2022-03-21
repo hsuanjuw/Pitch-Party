@@ -5,17 +5,40 @@
 
 .hide {display: none;}
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
 /*--------------------------------------------------
 # index
 --------------------------------------------------*/
 
 .center {
-  margin-top: 10em;
   width: 90%;
-  height: 50%;
-  padding: 10px;
+  padding-top: 25%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 } 
+
+.bg {
+  background-image: url('img/cover.png');
+
+  min-height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg h1{
+  margin: 0;
+}
+
+.bg h2{
+  margin: 0;
+}
 
 /*--------------------------------------------------
 # TopicPage

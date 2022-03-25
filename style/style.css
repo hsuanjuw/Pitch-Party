@@ -76,7 +76,6 @@ button, h1,h2,h3,h4,p{
   padding-left: 10%;
   padding-right: 10%;
   line-height: 150%;
-  font-family: cursive;
   color: #4d4d4d;
 }
 
@@ -146,7 +145,6 @@ button, h1,h2,h3,h4,p{
   padding-left: 5%;
   padding-right: 5%;
   line-height: 150%;
-  font-family: cursive;
   color: #4d4d4d;
 }
 
@@ -171,7 +169,6 @@ button, h1,h2,h3,h4,p{
 
 .mainText h2{
   font-weight: normal;
-  font-family: cursive;
   color: #4d4d4d;
   font-size: 22px;
 }
@@ -204,14 +201,12 @@ button, h1,h2,h3,h4,p{
 
 .designerPageText h2{
   line-height: 150%;
-  font-family: cursive;
   color: #4d4d4d;
   font-size: 25px;
 }
 
 .designerPageText h3{
   font-weight: normal;
-  font-family: cursive;
   color: #4d4d4d;
   margin-top: 15%;
 }

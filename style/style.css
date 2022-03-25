@@ -215,6 +215,17 @@ button, h1,h2,h3,h4,p{
   width: 85%;
 }
 
+.endRound{
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 3px 5px #e3e1e1;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 60%;
+  font-size: 18px;
+  margin-top: 8%;
+}
 /*--------------------------------------------------
 # Investor Page 1
 --------------------------------------------------*/

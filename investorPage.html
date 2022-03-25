@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="js/gamePage.js"></script>
+	<title></title>
+</head>
+<body onload="randomContent()">
+	<div class="header">
+		<button onclick="rulesShow()"><img src="img/Icon/question.png" class="homeIcon"></button>
+		<a href="index.html"><img src="img/Icon/home.png" class="homeIcon"></a> 
+	</div>
+
+	<!-----------------------------------------
+		# Rules - Popup 
+	------------------------------------------->
+	<div id="popupRules" class="modal hide">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<button onclick="rulesClose()"><img src="img/Icon/close.png" class="homeIcon"></button>
+		<div class="center popupRulesTitle">
+			<h2>Game rules</h2>
+		</div>
+		<div class="popupRules">
+			<ol>
+			  <li>Choose an Investor. Everyone else is an Exhibit Designer.</li>
+			  <li>The Investor receives a Pitch Card and a Refinement Card; and shows them to the Designers. </li>
+			  <li>The Investor receives a Personal Interest Card which they keep secret from the Designers.</li>
+			  <li>Designers pitch ideas to fulfill the Pitch and Refinement Cards.</li>
+			  <li>The Investor picks a design winner according to the Refinement and Personal Interest Cards.</li>
+			  <li>The Investor role passes to the left.</li>
+			</ol>
+		</div>
+	  </div>
+	</div>
+
+	<!-----------------------------------------
+		# InvestorPage1
+	------------------------------------------->
+	<div id="investorPage1" class="center">
+		<h2> You are the Investor<br> </h2>
+		<h3>You are looking for Pitches on:</h3>
+		<div class="pitchTopic-content">
+			<h2 id="pitchTopic1"></h2>
+		</div>
+		<h3>Your Refinement is:</h3>
+		<div class="refinement">
+			<h3 id="pitchRefinement1" class="refinementText">Includes All Age Groups</h3>
+		</div>
+		<h3>Read the <b>Pitch</b> and <b>Refinement</b> <br>out loud to the Designers!</h3>
+		<button class="generalBtn" onclick="showInvestorPage2()">Next</button>
+	</div>
+
+	<!-----------------------------------------
+		# InvestorPage2
+	------------------------------------------->
+	<div id="investorPage2" class="center hide">
+		<h2> Designers have <br> 30 seconds to think.<br> </h2>
+		<div class="timerBlock">
+			<h1 id="timerText">0:30</h1>
+		</div>
+<!-- 		<button class="generalBtn" onclick="showTimer()">Start timer</button> -->
+		<br><br><br>
+		<div class="refinement">
+			<h4>Pitch topic:</h4>
+			<h3 id="pitchTopic2"><b>Highlighting Women in Science and Technology</b></h3>
+			
+			<hr>
+			<h4>Refinement:</h4>
+			<h3 id="pitchRefinement2"><b>Includes All Age Groups</b></h3>
+		</div>
+		<br>
+		<button class="generalBtn " onclick="showInvestorPage3()">Listen to Pitches</button>
+	</div>
+
+	<!-----------------------------------------
+		# InvestorPage3
+	------------------------------------------->
+	<div id="investorPage3" class="center hide">
+		<h2> Listen to Pitches </h2>
+		<h1>SECRET</h1>
+		<div class="refinement">
+			<h4>Your personal interest:</h4>
+			<br>
+			<h3 id="personalInterest1"><b>Highlighting Women in Science and Technology</b></h3>
+		</div>
+		<br>
+		<h4 class="note">
+			* Personal interest is for you<br> 
+			to have criteria for judgement.<br>
+			<b>Keep it secret</b> to all the designers.
+		</h4>
+		<button class="generalBtn " onclick="showInvestorPage4()">Finish Pitching</button>
+	</div>
+
+	<!-----------------------------------------
+		# InvestorPage4
+	------------------------------------------->
+	<div id="investorPage4" class="center hide">
+		<h2> Choose the <br> winning Designer. </h2>
+		<div class="refinement">
+			<h4>Your personal interest:</h4>
+			<br>
+			<h3 id="personalInterest2"><b>Highlighting Women in Science and Technology</b></h3>
+		</div>
+		<h4 class="note">Announce your result and <br> reveal your personal interests <br> to the designers.</h4>
+		<br>
+<!-- 		<div class="refinement">
+			<h4>Pitch topic:</h4>
+			<h3 id="pitchTopic2"><b>Highlighting Women in Science and Technology</b></h3>
+			
+			<hr>
+			<h4>Refinement:</h4>
+			<h3 id="pitchRefinement1"><b>Includes All Age Groups</b></h3>
+		</div> -->
+		<a href="gamePage2.html"><button class="generalBtn" onclick="">End the round</button></a> 
+	</div>
+
+	<!-----------------------------------------
+		# foot
+	------------------------------------------->
+	<div class="foot"></div>
+
+</body>
+</html>

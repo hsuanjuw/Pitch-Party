@@ -2,9 +2,32 @@
 # Gerenal
 --------------------------------------------------*/
 /*icon color:  #A89E9E
-  text color:  #404040 */
+  text color:  #404040 
+  Scicom Blue: 29ABE2
+  Scicom Green: BADD7F */
+@font-face {
+    font-family: myFontB;
+    src:url("font/BRLNSB.TTF");
+}
+
+@font-face {
+    font-family: myFontDB;
+    src:url("font/BRLNSDB.TTF");
+}
+
+@font-face {
+    font-family: myFontR;
+    src:url("font/BRLNSR.TTF");
+}
+
 button, h1,h2,h3,h4,p{
   color: #4d4d4d;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .header{
@@ -77,10 +100,38 @@ button, h1,h2,h3,h4,p{
   padding-top: 15%;
 } 
 
-.gameImg{
-  width: 70%;
+.index-bg {
+  background-image: url("../img/coverBg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.buttonDiv{
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.indexBtn{
+  border: 2px solid #29ABE2;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 100%;
+  font-size: 28px;
+  font-family: "myFontDB";
+  margin-top: 20%; 
+  color: #29ABE2; 
+}
+
+.indexBtn-img{
+  width: 100%;
+}
 /*--------------------------------------------------
 # Rules
 --------------------------------------------------*/

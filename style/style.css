@@ -20,8 +20,25 @@
     src:url("font/BRLNSR.TTF");
 }
 
+@media screen and (orientation: landscape) {
+  html {
+    /* Rotate the content container */
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    /* Set content width to viewport height */
+    width: 100vh;
+    /* Set content height to viewport width */
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
 button, h1,h2,h3,h4,p{
   color: #4d4d4d;
+  font-family: myFontDB;
 }
 
 body, html {
@@ -31,18 +48,23 @@ body, html {
 }
 
 .header{
-  display: flex;
+/*  display: flex;
   justify-content: space-between;
   margin-top: 10%;
   padding-left: 10%;
+  padding-right: 10%;*/
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
   padding-right: 10%;
+  padding-top: 10%;
 }
 
 .header button{
   width: 12%;
   padding: 0;
   border: none;
-  background-color: white;
+  background-color: transparent;
 }
 
 .header a{
@@ -51,30 +73,34 @@ body, html {
 
 .homeIcon {
   width: 100%;
+  opacity: 0.65;
 } 
 
 .generalBtn{
-  border: 2px solid #f1f1f1;
-  border-radius: 10px;
-  background-color: #f1f1f1;
-  box-shadow: 3px 5px #e3e1e1;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  width: 50%;
-  font-size: 20px;
-  margin-top: 8%;
+  border: 2px solid #BADD7F;
+  border-radius: 15px;
+  background-color: #BADD7F;
+  box-shadow: 1px 2px 2px grey;
+  font-size: 28px;
+  font-family: "myFontDB";
+  color: white; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 35%;
+  font-size: 28px;
 }
 
 .generalBtn2{
-  border: 2px solid #f1f1f1;
-  border-radius: 10px;
-  background-color: #f1f1f1;
-  box-shadow: 3px 5px #e3e1e1;
+  border: 2px solid #BADD7F;
+  border-radius: 15px;
+  background-color: #BADD7F;
+  box-shadow: 1px 2px 2px grey;
   padding-top: 3%;
   padding-bottom: 3%;
-  width: 60%;
-  font-size: 18px;
+  width: 65%;
+  font-size: 28px;
   margin-top: 8%;
+  color: white;
 }
 
 .center {
@@ -135,20 +161,70 @@ body, html {
 /*--------------------------------------------------
 # Rules
 --------------------------------------------------*/
-.ruleText{
+.rule-bg {
+  background-image: url("../img/rule_bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.rule-header{
+  display: flex;
+  justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
-  line-height: 150%;
-  color: #4d4d4d;
+  padding-top: 10%;
+  width: 80%;
+}
+
+.rule-header button{
+  width: 12%;
+  padding: 0;
+  border: none;
+  background-color: none;
+  opacity: 0;
+}
+
+.rule-header a{
+  width: 12%;
+}
+
+#ruleTitle{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: myFontB;
+  font-size: 36px;
+}
+
+.ruleText{
+  padding-left: 10%;
+  padding-right: 5%;
+  line-height: 120%;
+  color:black;
+  font-family: myFontDB;
+  font-size: 24px;
 }
 
 .ruleText li{
   padding-left: 3%;
-  margin-bottom: 6%;
+  margin-top: 5%;
 }
 
 .ruleText ol{
-  padding-left: 7%;
+  padding-left: 3%;
+  margin-bottom: 0;
+}
+
+.ruleText p{
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.ruleBtn{
+  float: right; 
+  margin-right: 8%;
 }
 
 /*--------------------------------------------------
@@ -233,24 +309,28 @@ body, html {
 .mainText h2{
   font-weight: normal;
   color: #4d4d4d;
-  font-size: 22px;
+  font-size: 28px;
+  line-height: 150%;
+  margin-bottom: 0;
 }
 
 .choiceBtn{
-  border: 2px solid #f1f1f1;
-  border-radius: 10px;
-  background-color: #f1f1f1;
-  box-shadow: 3px 5px #e3e1e1;
+  border: 2px solid #29ABE2;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
   padding-top: 3%;
   padding-bottom: 3%;
   width: 70%;
-  font-size: 18px;
+  font-size: 28px;
   margin-top: 10%;
+  color: #29ABE2;
 }
 
 .choiceBtnDiv{
-  margin-top: 25%;
+  margin-top: 5%;
 }
+
 
 /*--------------------------------------------------
 # Designer Page 1
@@ -262,30 +342,45 @@ body, html {
   top: 15%;
 }
 
-.designerPageText h2{
+/*.designerPageText h2{
   line-height: 150%;
   color: #4d4d4d;
-  font-size: 25px;
+  font-size: 28px;
+}*/
+
+.designerPageText h1{
+  color: #4d4d4d;
+  margin-top: 0;
 }
 
 .designerPageText h3{
   font-weight: normal;
   color: #4d4d4d;
   margin-top: 15%;
+  font-size: 24px;
 }
 
 .designerPage-img{
-  width: 85%;
+  width: 100%;
 }
 
 /*--------------------------------------------------
 # Investor Page 1
 --------------------------------------------------*/
+.investor-bg {
+  background-image: url("../img/investor/investor_bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #investorPage1 h3{
   font-weight: normal;
 }
 
-.pitchTopic-content{
+/*.pitchTopic-content{
   background-color: #f1f1f1;
   width: 80%;
   padding-top: 10%;
@@ -296,15 +391,52 @@ body, html {
   margin-right: auto;
   border: 2px solid #f1f1f1;
   border-radius: 5px;
+}*/
+
+.content{
+  position: relative;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.pitchTopic-content h2{
-  font-size: 22px;
+#pitchTopic-img {
+  width: 90%;
+}
+
+#requirement-img {
+  width: 100%;
+}
+.content h2{
+  font-size: 24px;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: myFontB;
+}
+
+.content h3{
+  font-size: 24px;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-family: myFontDB;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  color: white;
+  width: 90%;
+}
+
+.marginTop{
+  margin-top: 7%;
 }
 
 .refinement{
-  background-color: #f1f1f1;
-  width: 80%;
+  background-color: rgb(241, 241, 241, 0.5);
+  width: 90%;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 3%;
@@ -327,12 +459,12 @@ body, html {
  # Investor Page 2
 --------------------------------------------------*/
 .timerBlock{
-  background-color: #f1f1f1;
+  background-color: rgb(241, 241, 241, 0.5);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #f1f1f1;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .timerBlock h1{
@@ -356,6 +488,14 @@ body, html {
 .refinement h3{
   margin-top: 0;
   padding-left: 5%;
+  font-size: 20px;
+  font-family: myFontR;
+  font-weight: normal;
+}
+
+#pitchTopic2, #pitchRefinement2, #personalInterest1, #personalInterest2 {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------
@@ -363,14 +503,8 @@ body, html {
 --------------------------------------------------*/
 .note{
   font-weight: normal;
-  font-size: ;
+  font-size: 22px;
+  font-family: myFontR;
 }
 
-/*--------------------------------------------------
-  # Investor Page 4
---------------------------------------------------*/
-.note{
-  font-weight: normal;
-  font-size: ;
-}
 

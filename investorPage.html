@@ -7,7 +7,7 @@
 	<script src="js/gamePage.js"></script>
 	<title></title>
 </head>
-<body onload="randomContent()">
+<body onload="randomContent()" class="investor-bg">
 	<div class="header">
 		<button onclick="rulesShow()"><img src="img/Icon/question.png" class="homeIcon"></button>
 		<a href="index.html"><img src="img/Icon/home.png" class="homeIcon"></a> 
@@ -41,16 +41,19 @@
 		# InvestorPage1
 	------------------------------------------->
 	<div id="investorPage1" class="center">
-		<h2> You are the Investor<br> </h2>
-		<h3>You are looking for Pitches on:</h3>
-		<div class="pitchTopic-content">
-			<h2 id="pitchTopic1"></h2>
+		<h1 style="font-family: myFontDB;"> You are the Investor<br> </h1>
+		<!-- <h3>You are looking for Pitches on:</h3> -->
+		<div class="content">
+			<img src="img/investor/topic_darkblue.png" id="pitchTopic-img">
+			<h2 id="pitchTopic1">sss</h2>
 		</div>
-		<h3>Your Refinement is:</h3>
-		<div class="refinement">
+<!-- 		<h3>Your Refinement is:</h3> -->
+		
+		<div class="content marginTop">
+			<img src="img/investor/requirement_all.png" id="requirement-img">
 			<h3 id="pitchRefinement1" class="refinementText">Includes All Age Groups</h3>
 		</div>
-		<h3>Read the <b>Pitch</b> and <b>Refinement</b> <br>out loud to the Designers!</h3>
+		<h3 style="font-family: myFontR" class="marginTop">Read the <b>Pitch</b> and <b>Refinement</b> <br>out loud to the Designers!</h3>
 		<button class="generalBtn" onclick="showInvestorPage2()">Next</button>
 	</div>
 
@@ -65,11 +68,11 @@
 <!-- 		<button class="generalBtn" onclick="showTimer()">Start timer</button> -->
 		<br><br><br>
 		<div class="refinement">
-			<h4>Pitch topic:</h4>
+			<h3>Pitch topic:</h3>
 			<h3 id="pitchTopic2"><b>Highlighting Women in Science and Technology</b></h3>
 			
 			<hr>
-			<h4>Refinement:</h4>
+			<h3>Refinement:</h3>
 			<h3 id="pitchRefinement2"><b>Includes All Age Groups</b></h3>
 		</div>
 		<br>
@@ -83,7 +86,7 @@
 		<h2> Listen to Pitches </h2>
 		<h1>SECRET</h1>
 		<div class="refinement">
-			<h4>Your personal interest:</h4>
+			<h3>Your personal interest:</h3>
 			<br>
 			<h3 id="personalInterest1"><b>Highlighting Women in Science and Technology</b></h3>
 		</div>
@@ -93,7 +96,7 @@
 			to have criteria for judgement.<br>
 			<b>Keep it secret</b> to all the designers.
 		</h4>
-		<button class="generalBtn " onclick="showInvestorPage4()">Finish Pitching</button>
+		<button class="generalBtn2" onclick="showInvestorPage4()">Finish Pitching</button>
 	</div>
 
 	<!-----------------------------------------
@@ -102,7 +105,7 @@
 	<div id="investorPage4" class="center hide">
 		<h2> Choose the <br> winning Designer. </h2>
 		<div class="refinement">
-			<h4>Your personal interest:</h4>
+			<h3>Your personal interest:</h3>
 			<br>
 			<h3 id="personalInterest2"><b>Highlighting Women in Science and Technology</b></h3>
 		</div>
@@ -116,7 +119,7 @@
 			<h4>Refinement:</h4>
 			<h3 id="pitchRefinement1"><b>Includes All Age Groups</b></h3>
 		</div> -->
-		<a href="gamePage2.html"><button class="generalBtn" onclick="">End the round</button></a> 
+		<a href="gamePage2.html"><button class="generalBtn2" onclick="">End the round</button></a> 
 	</div>
 
 	<!-----------------------------------------

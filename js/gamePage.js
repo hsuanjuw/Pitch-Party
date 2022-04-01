@@ -68,6 +68,22 @@ function showInvestorPage4(){
   show(document.getElementById("investorPage4"));  
 }
 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    alert(panel);
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
 
 /* --------------------------------------------------------------
  # Topic
@@ -149,6 +165,7 @@ function randomTopic(){
     var randomInt = getRandomInt(0, topics.length);
     document.getElementById("pitchTopic1").innerHTML = topics[randomInt];
     document.getElementById("pitchTopic2").innerHTML = topics[randomInt];
+    document.getElementById("pitchTopic3").innerHTML = topics[randomInt];
     if(topics_category[randomInt]=="Technology"){
       document.getElementById("pitchTopic-img").src = "img/investor/topic_tech.png";
     }
@@ -164,12 +181,14 @@ function randomRefinement() {
     var randomInt = getRandomInt(0, refinements.length);
     document.getElementById("pitchRefinement1").innerHTML = "<b>"+refinements[randomInt]+"</b>";
     document.getElementById("pitchRefinement2").innerHTML = "<b>"+refinements[randomInt]+"</b>";
+    document.getElementById("pitchRefinement3").innerHTML = "<b>"+refinements[randomInt]+"</b>";
 }
 
 function randomPersonalInterest(){
     var randomInt = getRandomInt(0, personalInterests.length);
     document.getElementById("personalInterest1").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";
-    document.getElementById("personalInterest2").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";  
+    document.getElementById("personalInterest2").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";
+    document.getElementById("personalInterest3").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";  
 }
 
 function randomContent(){

@@ -4,7 +4,12 @@
 /*icon color:  #A89E9E
   text color:  #404040 
   Scicom Blue: 29ABE2
-  Scicom Green: BADD7F */
+  Scicom Green: BADD7F 
+  Green button: 
+    border: 2px solid #BADD7F;
+    border-radius: 15px;
+    background-color: #BADD7F;
+    box-shadow: 1px 2px 2px grey; */
 @font-face {
     font-family: myFontB;
     src:url("font/BRLNSB.TTF");
@@ -36,7 +41,7 @@
   }
 }
 
-button, h1,h2,h3,h4,p{
+h1,h2,h3,h4,p{
   color: #4d4d4d;
   font-family: myFontDB;
 }
@@ -73,17 +78,21 @@ body, html {
 
 .homeIcon {
   width: 100%;
-  opacity: 0.65;
+  border: 3px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey;
+/*  opacity: 0.65;*/
 } 
 
 .generalBtn{
-  border: 2px solid #BADD7F;
-  border-radius: 15px;
-  background-color: #BADD7F;
+  border: 2px solid #29ABE2;
+  border-radius: 20px;
+  background-color: white;
   box-shadow: 1px 2px 2px grey;
   font-size: 28px;
   font-family: "myFontDB";
-  color: white; 
+  color: #29ABE2; 
   padding-top: 1%;
   padding-bottom: 1%;
   width: 35%;
@@ -91,16 +100,17 @@ body, html {
 }
 
 .generalBtn2{
-  border: 2px solid #BADD7F;
-  border-radius: 15px;
-  background-color: #BADD7F;
+  border: 2px solid #29ABE2;
+  border-radius: 20px;
+  background-color: white;
   box-shadow: 1px 2px 2px grey;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  width: 65%;
-  font-size: 28px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 60%;
+  font-size: 24px;
+  font-family: "myFontDB";
   margin-top: 8%;
-  color: white;
+  color: #29ABE2;
 }
 
 .center {
@@ -110,8 +120,7 @@ body, html {
 } 
 
 .foot{
-  position: absolute;
-  height: 50px;
+  height: 75px;
 }
 
 .show {display: block;}
@@ -163,7 +172,16 @@ body, html {
 # Rules
 --------------------------------------------------*/
 .rule-bg {
-  background-image: url("../img/rule_bg.png");
+  background-image: url("../img/rules/Rules-1.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.rule-bg2 {
+  background-image: url("../img/rules/Rules-2.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -229,6 +247,7 @@ body, html {
 .ruleBtn{
   float: right; 
   margin-right: 12%;
+  margin-top: 96%;
 }
 
 /*--------------------------------------------------
@@ -325,10 +344,14 @@ body, html {
   box-shadow: 1px 2px 2px grey;
   padding-top: 3%;
   padding-bottom: 3%;
-  width: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
   font-size: 28px;
   margin-top: 10%;
   color: #29ABE2;
+  font-family: "myFontDB";
+
 }
 
 .choiceBtnDiv{
@@ -397,6 +420,10 @@ body, html {
   border-radius: 5px;
 }*/
 
+.titleTxt{
+  margin-top: 3%;
+}
+
 .content{
   position: relative;
   text-align: center;
@@ -449,6 +476,7 @@ body, html {
   margin-right: auto;
   border: 2px solid #f1f1f1;
   border-radius: 5px;
+  margin-top: 5%;
 }
 
 .refinement h3{
@@ -458,6 +486,7 @@ body, html {
 .refinementText{
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------
  # Investor Page 2
@@ -469,6 +498,8 @@ body, html {
   margin-right: auto;
   border: 2px solid #f1f1f1;
   border-radius: 5px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .timerBlock h1{
@@ -479,7 +510,11 @@ body, html {
   width: 80%;
   margin-top: 8%;
   margin-bottom: 8%;
-  color: #f1f1f1;
+  color:gray;
+  opacity: 0.5;
+  background-color:gray;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .refinement h4{
@@ -491,24 +526,71 @@ body, html {
 
 .refinement h3{
   margin-top: 0;
-  padding-left: 5%;
   font-size: 20px;
   font-family: myFontR;
   font-weight: normal;
 }
 
-#pitchTopic2, #pitchRefinement2, #personalInterest1, #personalInterest2 {
+#pitchTopic2, #pitchRefinement2, #pitchTopic3, #pitchRefinement3, #personalInterest1, #personalInterest2, #personalInterest3 {
   font-size: 26px;
   font-weight: bold;
 }
-
 /*--------------------------------------------------
   # Investor Page 3
 --------------------------------------------------*/
 .note{
+
   font-weight: normal;
   font-size: 22px;
   font-family: myFontR;
+  margin-top: 0;
 }
 
+.note b{
+  color: #e05a51;
+}
 
+.accordion{
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+.accordion-item{
+  background-color: transparent !important;
+  border: 1px solid #f1f1f1 !important;
+}
+
+.accordion-button, .accordion-body{
+  background: rgba(241,241,241,0.5) !important;
+  font-size: 18px !important;
+  font-family: myFontR;
+  font-weight: normal;
+} 
+
+.accordion-button:focus{
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-body hr{
+  width: 80%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  color:gray;
+  opacity: 0.8;
+  background-color:gray;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*--------------------------------------------------
+  # Investor Page 4
+--------------------------------------------------*/
+
+.endingTitleTxt{
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

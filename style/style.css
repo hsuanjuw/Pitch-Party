@@ -110,6 +110,7 @@ body, html {
 } 
 
 .foot{
+  position: absolute;
   height: 50px;
 }
 

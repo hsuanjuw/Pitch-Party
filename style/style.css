@@ -204,8 +204,8 @@ body, html {
   padding-right: 5%;
   line-height: 120%;
   color:black;
-  font-family: myFontDB;
-  font-size: 24px;
+  font-family: myFontR;
+  font-size: 18px;
 }
 
 .ruleText li{
@@ -214,18 +214,21 @@ body, html {
 }
 
 .ruleText ol{
-  padding-left: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
   margin-bottom: 0;
 }
 
 .ruleText p{
   margin-top: 2.5%;
   margin-bottom: 2.5%;
+  padding-left: 7%;
+  padding-right: 3%;
 }
 
 .ruleBtn{
   float: right; 
-  margin-right: 8%;
+  margin-right: 12%;
 }
 
 /*--------------------------------------------------

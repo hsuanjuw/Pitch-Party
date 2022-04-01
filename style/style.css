@@ -78,7 +78,7 @@ body, html {
 
 .homeIcon {
   width: 100%;
-  border: 3px solid #29ABE2;
+  border: 2px solid #29ABE2;
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 1px 2px grey;
@@ -432,7 +432,7 @@ body, html {
 }
 
 #pitchTopic-img {
-  width: 90%;
+  width: 100%;
 }
 
 #requirement-img {
@@ -441,7 +441,7 @@ body, html {
 .content h2{
   font-size: 24px;
   position: absolute;
-  top: 53%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: myFontB;

@@ -44,7 +44,7 @@
 		<h1 style="font-family: myFontDB;"> You are the Investor<br> </h1>
 		<!-- <h3>You are looking for Pitches on:</h3> -->
 		<div class="content">
-			<img src="img/investor/topic_darkblue.png" id="pitchTopic-img">
+			<img src="" id="pitchTopic-img">
 			<h2 id="pitchTopic1">sss</h2>
 		</div>
 <!-- 		<h3>Your Refinement is:</h3> -->
@@ -53,6 +53,7 @@
 			<img src="img/investor/requirement_all.png" id="requirement-img">
 			<h3 id="pitchRefinement1" class="refinementText">Includes All Age Groups</h3>
 		</div>
+		<button class="generalBtn2" onclick="randomContent()">Change Pitch</button>
 		<h3 style="font-family: myFontR" class="marginTop">Read the <b>Pitch</b> and <b>Refinement</b> <br>out loud to the Designers!</h3>
 		<button class="generalBtn" onclick="showInvestorPage2()">Next</button>
 	</div>
@@ -76,7 +77,8 @@
 			<h3 id="pitchRefinement2"><b>Includes All Age Groups</b></h3>
 		</div>
 		<br>
-		<button class="generalBtn2 " onclick="showInvestorPage3()">Listen to Pitches</button>
+		<button id="timerBtn" class="generalBtn2 " onclick="startTimer()">Start timer</button>
+		<button id="investorPage2Btn" class="generalBtn2 hide " onclick="showInvestorPage3()">Listen to Pitches</button>
 	</div>
 
 	<!-----------------------------------------

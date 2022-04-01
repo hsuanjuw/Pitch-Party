@@ -31,7 +31,6 @@ function rulesClose(){
 function showInvestorPage2(){
   hide(document.getElementById("investorPage1"));
   show(document.getElementById("investorPage2"));
-  startTimer();
 }
 
 /*--Timer----------------*/
@@ -40,6 +39,8 @@ var clock;
 
 function startTimer(){
   clock=setInterval(timer,1000);
+  hide(document.getElementById("timerBtn"));
+  document.getElementById("investorPage2Btn").style.display="inline-block";  
 }
 
 function stopTimer(){
@@ -72,25 +73,45 @@ function showInvestorPage4(){
  # Topic
 ---------------------------------------------------------------*/
 const topics = [
-    "Use AR(Augmented Reality) to create an educational exhibit",
-    "Create an interactive exhibit about water resource protection", 
-    "Combine two different technologies to create an exhibit",
-    "Design an exhibit based on your impression of Pittsburgh",
-    "Design an exhibit where the devices can be easily updated yearly",
-    "Use Kinect to create an exhibit about climate change", 
-    "Design an exhibit based on a personal hobby", 
-    "Design an exhibit to facilitate communication between parents and children", 
-    "Design an exhibit focusing on the relationship between lovers",
-    "Use a mobile app in an unconventional way", 
-    "Highlight women’s contribution in science and technology", 
-    "Design an exhibition for minorities in the society", 
-    "An exhibition to reflect monthly astronomy discoveries",
-    "Combat science misinformation amongst the public", 
-    "Create interesting learning experiences for visitors", 
-    "Create a more immersive experience for visitors",
-    "A VR(Virtual Reality) experience about pandemic", 
-    "An exhibition which could offer the visitor an experience-related reward"
+  "Use AR (Augmented Reality) to create an educational exhibit", 
+  "Design an interactive exhibit about water resource protection", 
+  "Combine two different technologies to create an interactive exhibit",
+  "Design an exhibit based on your first impression of Pittsburgh", 
+  "Design an exhibit that can be easily updated yearly", 
+  "Use Kinect to create an exhibit about climate change", 
+  "Design an exhibit based on a personal hobby", 
+  "Design an exhibit centered on the relationship between couples", 
+  "Use a mobile app in an unconventional way as part of an exhibit",  
+  "Highlight women’s contributions to science and technology", 
+  "Highlight minorities’ contributions to science and technology", 
+  "Highlight a scientist who you believe deserves more recognition",  
+  "Design an exhibit to reflect monthly astronomy discoveries",  
+  "Combat health misinformation amongst the public", 
+  "Combat climate change misinformation amongst the public", 
+  "Create an interactive learning experience for large groups", 
+  "Create an immersive experiential event for visitors" 
 ];
+
+const topics_category = [
+  "Technology",
+  "Science",
+  "Technology",
+  "Technology",
+  "Technology",
+  "Technology",
+  "Technology",
+  "Technology",
+  "Technology",
+  "Diversity",
+  "Diversity",
+  "Diversity",
+  "Science", 
+  "Science",
+  "Science",
+  "Technology",
+  "Technology"
+];
+
 
 const refinements = [
   "Understandable for non-English speakers",
@@ -128,6 +149,15 @@ function randomTopic(){
     var randomInt = getRandomInt(0, topics.length);
     document.getElementById("pitchTopic1").innerHTML = topics[randomInt];
     document.getElementById("pitchTopic2").innerHTML = topics[randomInt];
+    if(topics_category[randomInt]=="Technology"){
+      document.getElementById("pitchTopic-img").src = "img/investor/topic_tech.png";
+    }
+    else if(topics_category[randomInt]=="Science"){
+      document.getElementById("pitchTopic-img").src = "img/investor/topic_sci.png";
+    }
+    else if(topics_category[randomInt]=="Diversity"){
+      document.getElementById("pitchTopic-img").src = "img/investor/topic_div.png";
+    }
 }
 
 function randomRefinement() {

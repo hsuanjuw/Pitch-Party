@@ -40,6 +40,7 @@ var clock;
 function startTimer(){
   clock=setInterval(timer,1000);
   hide(document.getElementById("timerBtn"));
+  document.getElementById("retimerBtn").style.display="inline-block";
   document.getElementById("investorPage2Btn").style.display="inline-block";  
 }
 
@@ -48,11 +49,17 @@ function stopTimer(){
 }
 
 function timer(){
-  second--;
   document.getElementById('timerText').innerHTML='0:' + second;
-  if(second<=0){
+  second--;
+  if(second<0){
     stopTimer();
   }
+}
+
+function restartTimer(){
+  stopTimer();
+  second=30;
+  clock=setInterval(timer,1000);
 }
 
 /*--End Timer----------------*/
@@ -166,6 +173,7 @@ function randomTopic(){
     document.getElementById("pitchTopic1").innerHTML = topics[randomInt];
     document.getElementById("pitchTopic2").innerHTML = topics[randomInt];
     document.getElementById("pitchTopic3").innerHTML = topics[randomInt];
+    document.getElementById("pitchTopic4").innerHTML = topics[randomInt];
     if(topics_category[randomInt]=="Technology"){
       document.getElementById("pitchTopic-img").src = "img/investor/topic_tech.png";
     }
@@ -182,6 +190,7 @@ function randomRefinement() {
     document.getElementById("pitchRefinement1").innerHTML = "<b>"+refinements[randomInt]+"</b>";
     document.getElementById("pitchRefinement2").innerHTML = "<b>"+refinements[randomInt]+"</b>";
     document.getElementById("pitchRefinement3").innerHTML = "<b>"+refinements[randomInt]+"</b>";
+    document.getElementById("pitchRefinement4").innerHTML = "<b>"+refinements[randomInt]+"</b>";
 }
 
 function randomPersonalInterest(){

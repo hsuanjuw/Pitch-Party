@@ -75,21 +75,6 @@ function showInvestorPage4(){
   show(document.getElementById("investorPage4"));  
 }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    alert(panel);
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
 
 
 /* --------------------------------------------------------------
@@ -146,7 +131,17 @@ const refinements = [
   "Requires communication with other visitors",
   "Combines storytelling with the project",
   "Let visitors become a part of the exhibition",
-  "An feet-interact exhibition"
+  "An feet-interact exhibition",
+  "Costs 300 dollars to visit",
+  "Requires visitors to wear sports clothes",
+  "Opens only at night",
+  "Opens for only 1 hour a day",
+  "Located on top of a mountain",
+  "Located at a public transit stop",
+  "Involves pop culture (anime, superheroes, etc.)",
+  "Requires visitors to wear Halloween costumes", 
+  "Primarily targeted towards visitors’ pets", 
+  "Constructed out of edible materials"
 ];
 
 const personalInterests=[

@@ -41,18 +41,35 @@
 		# DesignerPage1
 	------------------------------------------->
 	<div id="designerPage1" class="center designerPageText">
-		<h1> You are an <br> Exhibit Designer.</h1>
+		<h2> You are a Designer.</h2>
 
-		<img src="img/designer/DesignerPageImage.png" class="designerPage-img">
+		<!-- <img src="img/designer/DesignerPageImage.png" class="designerPage-img"> -->
 
-		<h3>
-			You have to <b>pitch ideas</b>. 
-			Listen to the Investor for 
-			<b>Pitch</b> and <b>Requirement</b>! 
-			Then, you will have  
-			<b>30 </b> seconds to think.
-		</h3>
-		<a href="gamePage2.html"><button class="choiceBtn" onclick="">End the round</button></a>
+		<p class="designer-txt">
+			Listen to the Investor for the Pitch Topic! <br>
+			Or search using the Topic code (received from the funder).
+		</p>
+		<div id="checkDiv">
+			<input type="text" id="topicCode" name="topicCode"> 
+			<button onclick= "showTopic()" class="checkBtn"><img src="img/Icon/check.png" class="checkIcon"></button>
+		</div>
+		<div id="designTopicDiv" class="design-refinement hide">
+			<h3>Pitch topic:</h3>
+			<h3 id="designTopic"><b>Highlighting Women in Science and Technology</b></h3>
+			
+			<hr>
+			<h3>Requirement:</h3>
+			<h3 id="designRefinement"><b>Includes All Age Groups</b></h3>
+			<div class="inspirationDiv">
+				<button onclick= "showTopic()" class="inspirationBtn"><img src="img/Icon/inspiration.png" class="inspirationIcon"></button>
+			</div>
+		</div>		
+		
+		<div class="designerBtn-div">
+			<a href="gamePage2.html"><button class="designer-btn" onclick="">I Lose the round</button></a>
+			<a href="gamePage2.html"><button class="designer-btn" onclick="">I Won the Round</button></a>
+		</div>
+		
 
 		
 	<div class="foot"></div>

@@ -60,9 +60,9 @@ body, html {
   padding-right: 10%;*/
   display: flex;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
 }
 
 .header button{
@@ -366,7 +366,7 @@ body, html {
   position: absolute;
   width: 80%;
   left: 10%;
-  top: 15%;
+  top: 10%;
 }
 
 /*.designerPageText h2{
@@ -389,6 +389,98 @@ body, html {
 
 .designerPage-img{
   width: 100%;
+}
+
+.designer-txt{
+  font-size: 18px;
+  font-family: "myFontR"! important;
+}
+
+#topicCode{
+  width: 35%;
+  height: 20px;
+  margin-right: 5%;
+}
+
+#checkDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkIcon, .inspirationIcon{
+  width: 100%;
+}
+
+.checkBtn{
+  width: 10%;
+  border: 2px solid #29ABE2;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey; 
+  padding:1%;
+}
+
+.designerBtn-div{
+  margin-top: 5%;
+}
+
+.designer-btn{
+  border: 2px solid #29ABE2;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
+  font-size: 24px;
+  margin-top: 10%;
+  color: #29ABE2;
+  font-family: "myFontDB";  
+}
+
+.design-refinement{
+  background-color: rgb(241, 241, 241, 0.5);
+  width: 85%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.design-refinement h3{
+  margin-top: 0;
+  font-size: 16px;
+  font-family: myFontR;
+  font-weight: normal;
+}
+
+#designRefinement{
+  margin-bottom: 0;
+}
+
+.inspirationBtn{
+  width: 12%;
+  border: 2px solid #29ABE2;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey; 
+  padding:1%;
+  margin-top: 2%;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.inspirationDiv{
+  display: flex;
+  justify-content: right;
 }
 
 /*--------------------------------------------------
@@ -526,13 +618,13 @@ body, html {
 
 .refinement h3{
   margin-top: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: myFontR;
   font-weight: normal;
 }
 
-#pitchTopic2, #pitchRefinement2, #pitchTopic3, #pitchRefinement3, #personalInterest1, #personalInterest2, #personalInterest3 {
-  font-size: 26px;
+#pitchTopic2, #pitchRefinement2, #pitchTopic3, #pitchRefinement3, #personalInterest1, #personalInterest2, #personalInterest3, #designTopic, #designRefinement {
+  font-size: 22px;
   font-weight: bold;
 }
 /*--------------------------------------------------

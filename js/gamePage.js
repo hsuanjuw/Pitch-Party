@@ -201,6 +201,16 @@ function randomContent(){
   randomPersonalInterest();
 }
 
+function showTopic(){
+  var code1 = document.getElementById('topicCode').value.substring(0,1);
+  var code1Num = code1.charCodeAt(0)-65;
+  var code2 = parseInt(document.getElementById('topicCode').value.substring(1));
+  document.getElementById("designTopic").innerHTML = topics[code1Num];
+  document.getElementById("designRefinement").innerHTML = refinements[code2];
+  document.getElementById("checkDiv").style.display="none";
+  show(document.getElementById("designTopicDiv"));
+
+}
 
 
 

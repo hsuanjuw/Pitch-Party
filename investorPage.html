@@ -44,7 +44,7 @@
 		# InvestorPage1
 	------------------------------------------->
 	<div id="investorPage1" class="center">
-		<h1 style="font-family: myFontDB;" class=titleTxt"> You are" the Investor<br> </h1>
+		<h1 style="font-family: myFontDB;" class=titleTxt"> You are the Funder.<br> </h1>
 		<!-- <h3>You are looking for Pitches on:</h3> -->
 		<div class="content">
 			<img src="" id="pitchTopic-img">
@@ -55,8 +55,8 @@
 			<img src="img/investor/requirement_all.png" id="requirement-img">
 			<h3 id="pitchRefinement1" class="refinementText">Includes All Age Groups</h3>
 		</div>
-		<button class="generalBtn2" onclick="randomContent()">Reroll Topic</button>
-		<h3 style="font-family: myFontR" class="marginTop">Read the <b>Pitch</b> and <b>Requirement</b> <br>out loud to the Designers!</h3>
+		<h3 style="font-family: myFontR" class="marginTop">Read the <b>Pitch Topic</b> and <b>Requirement</b> <br>to the Designers!</h3>
+		<button class="generalBtn3" onclick="randomContent()">Reroll</button>
 		<button class="generalBtn" onclick="showInvestorPage2()">Next</button>
 	</div>
 
@@ -64,25 +64,23 @@
 		# InvestorPage2
 	------------------------------------------->
 	<div id="investorPage2" class="center hide">
-		<h2 class="titleTxt"> Designers have <br> 30 seconds to think.<br> </h2>
+		<h2 style="font-family: myFontR" class="marginTop"> Give <b>Designers</b> <br> 30 seconds to <b>brainstorm</b>.<br> </h2>
 		<div class="timerBlock">
 			<h1 id="timerText">0:30</h1>
+			<button id="timerBtn" class="generalBtn2 " onclick="startTimer()">Start timer</button>
+			<button id="retimerBtn" class="generalBtn2 hide" onclick="restartTimer()">restart timer</button>
 		</div>
-		<button id="timerBtn" class="generalBtn2 " onclick="startTimer()">Start timer</button>
-		<button id="retimerBtn" class="generalBtn2 hide" onclick="restartTimer()">restart timer</button>
-		<br><br>
-		<h1>SECRET</h1>
 		<div class="refinement">
-			<h3>Your personal interest:</h3>
+			<h3><b style="color:#e43e7e">SECRET</b>  Personal Interest</h3>
 			<br>
 			<h3 id="personalInterest1"><b></b></h3>
 		</div>
 		<br>
-		<h4 class="note">
+		<!-- <h4 class="note">
 			* Personal interest is for you<br> 
 			to have criteria for judgement.<br>
 			<b>Keep it secret</b> to all the designers.
-		</h4>
+		</h4> -->
 
 		<div class="accordion" id="accordionExample">
 		  <div class="accordion-item">
@@ -100,18 +98,17 @@
 		    </div>
 		  </div>
 		</div>
-		<button id="investorPage2Btn" class="generalBtn2 " onclick="showInvestorPage3()">Listen to Pitches</button>
+		<button id="investorPage2Btn" class="generalBtn2 " onclick="showInvestorPage3()">End Brainstorming</button>
 	</div>
 
 	<!-----------------------------------------
 		# InvestorPage3
 	------------------------------------------->
 	<div id="investorPage3" class="center hide">
-		<h1 class="titleTxt"> Now it's pitch time!<br> </h1>
+		<h1 style="font-family: myFontR" class="marginTop">Ask <b>Designers</b> to <b>pitch</b> their ideas.<br> </h1>
 		<br>
-		<h1 class="titleTxt">SECRET</h1>
 		<div class="refinement">
-			<h3>Your personal interest:</h3>
+			<h3><b style="color:#e43e7e">SECRET</b>  Personal Interest</h3>
 			<br>
 			<h3 id="personalInterest2"><b></b></h3>
 		</div>
@@ -132,9 +129,9 @@
 		# InvestorPage4
 	------------------------------------------->
 	<div id="investorPage4" class="center hide ">
-		<h2 class="endingTitleTxt"> Reveal your personal interests and choose the winning Designer. </h2>
+		<h2 class="endingTitleTxt"> Pick the winning Designer! </h2>
 		<div class="refinement">
-			<h3>Your personal interest:</h3>
+			<h3><b style="color:#3c8dc4">Reveal</b>  Personal Interest</h3>
 			<br>
 			<h3 id="personalInterest3"><b>Highlighting Women in Science and Technology</b></h3>
 		</div>
@@ -154,7 +151,6 @@
 		    </div>
 		  </div>
 		</div>
-		<br><br>
 		<br>
 		<a href="gamePage2.html"><button class="generalBtn2" onclick="">End the round</button></a> 
 	</div>

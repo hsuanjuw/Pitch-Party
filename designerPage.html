@@ -61,7 +61,7 @@
 			<h3>Requirement:</h3>
 			<h3 id="designRefinement"><b>Includes All Age Groups</b></h3>
 			<div class="inspirationDiv">
-				<button onclick= "showTopic()" class="inspirationBtn"><img src="img/Icon/inspiration.png" class="inspirationIcon"></button>
+				<button onclick= "hintShow()" class="inspirationBtn"><img src="img/Icon/inspiration.png" class="inspirationIcon"></button>
 			</div>
 		</div>		
 		
@@ -70,7 +70,25 @@
 			<a href="gamePage2.html"><button class="designer-btn" onclick="">I Won the Round</button></a>
 		</div>
 		
+	<!-----------------------------------------
+		# hintPage 
+	------------------------------------------->
+	<div id="inspirationHints" class="modal hide">
 
+		<!-- Modal content -->
+		<div class="inspiration-content">
+		  <button onclick="hintClose()"><img src="img/Icon/close.png" class="homeIcon"></button>
+		  <div class="center popupRulesTitle">
+			<h2>Inspiration</h2>
+		  </div>
+		  <div class="InspirationImg">
+			<img src="img/icon-play-10.png" alt="">
+		  </div>
+		  <div class="designer-txt">
+				  <h4>This is inspiration text.</h4>
+		  </div>
+		</div>
+	  </div>
 		
 	<div class="foot"></div>
 </body>

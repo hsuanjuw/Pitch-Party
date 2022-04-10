@@ -311,6 +311,34 @@ body, html {
   line-height: 150%;
 }
 
+.inspiration-content {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 3px #e3e1e1;
+  border-radius: 10px;
+  width: 80%;
+  height: 50%;
+  padding: 3%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.inspiration-content button{
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 3px #e3e1e1;
+  width: 10%;
+  padding: 2%;
+}
+
+.InspirationImg{
+  width: 50%;
+}
 .popupRulesTitle h2{
   margin-top: 0;
   margin-bottom: 1%;

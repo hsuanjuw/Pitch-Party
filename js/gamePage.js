@@ -33,6 +33,18 @@ function showInvestorPage2(){
   show(document.getElementById("investorPage2"));
 }
 
+/* --------------------------------------------------------------
+ # DesignerPage
+---------------------------------------------------------------*/
+function hintShow(){
+  show(document.getElementById("inspirationHints"));
+}
+
+function hintClose(){
+  hide(document.getElementById("inspirationHints"));
+}
+
+
 /*--Timer----------------*/
 var second=30;
 var clock;

@@ -100,6 +100,15 @@ p, h4{
   width: 10%;
 }
 
+.scoreTitle{
+  margin: 0;
+  font-size: 8px;
+}
+
+#score{
+  margin: 0;
+}
+
 .homeIcon {
   width: 100%;
   border: 2px solid #29ABE2;

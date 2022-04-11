@@ -7,11 +7,16 @@
 	<link rel="stylesheet" href="style/style.css">
 	
 	<script src="js/gamePage.js"></script>
+	<script src="js/scoring.js"></script>
 	<title></title>
 </head>
-<body class="investor-bg">
+<body class="investor-bg" onload="onLoadScoring()">
 	<div class="header">
 		<button onclick="rulesShow()"><img src="img/Icon/question.png" class="homeIcon"></button>
+		<div class="center">
+			<p class="scoreTitle">Score:</p>
+			<h2 id="score"></h2>
+		</div>
 		<button onclick="QuitPopupShow()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
 	</div>
 
@@ -88,7 +93,7 @@
 		
 		<div class="designerBtn-div">
 			<a href="gamePage2.html"><button class="designer-btn" onclick="">I Lose the round</button></a>
-			<a href="gamePage2.html"><button class="designer-btn" onclick="">I Won the Round</button></a>
+			<a href="gamePage2.html"><button class="designer-btn" onclick="scoring()">I Won the Round</button></a>
 		</div>
 		
 	<!-----------------------------------------

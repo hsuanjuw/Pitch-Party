@@ -212,6 +212,7 @@ function randomTopic(){
     else if(topics_category[randomInt]=="Diversity"){
       document.getElementById("pitchTopic-img").src = "img/investor/topic_div.png";
     }
+    return randomInt;
 }
 
 function randomRefinement() {
@@ -220,6 +221,7 @@ function randomRefinement() {
     document.getElementById("pitchRefinement2").innerHTML = refinements[randomInt];
     document.getElementById("pitchRefinement3").innerHTML = refinements[randomInt];
     document.getElementById("pitchRefinement4").innerHTML = refinements[randomInt];
+    return randomInt;
 }
 
 function randomPersonalInterest(){
@@ -230,9 +232,12 @@ function randomPersonalInterest(){
 }
 
 function randomContent(){
-  randomTopic();
-  randomRefinement();
+  var topicNum = randomTopic();
+  var refinementNum = randomRefinement();
+  var topicCode = String.fromCharCode(65+topicNum);;
   randomPersonalInterest();
+
+  document.getElementById("investorTopicCode").innerHTML = topicCode+refinementNum.toString();
 }
 
 function showTopic(){

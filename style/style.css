@@ -683,6 +683,7 @@ p, h4{
 #requirement-img {
   width: 100%;
 }
+
 #pitchTopic1{
   position: absolute;
   top: 58%;
@@ -690,6 +691,27 @@ p, h4{
   transform: translate(-50%, -50%);
   font-size: 22px;
 }
+
+#investorTopicCodeDiv{
+  position: absolute;
+  top: 12%;
+  left: 83%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+}
+
+#investorTopicCode{
+  font-family: "mainFontBold"; 
+  margin: 0;
+}
+
+#investorTopicCodeTitle{
+  font-family: "mainFontRegular";
+  margin: 0; 
+  font-size: 10px;
+}
+
 
 .content h3{
   position: absolute;
@@ -702,6 +724,7 @@ p, h4{
   color: white;
   width: 90%;
 }
+
 
 .refinementText{
   margin-bottom: 0;
@@ -723,7 +746,8 @@ p, h4{
 .investorPage1-btnDiv{
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  margin-top: 7%;  
 }
 
 /*--------------------------------------------------

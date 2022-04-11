@@ -93,42 +93,43 @@ function showInvestorPage4(){
  # Topic
 ---------------------------------------------------------------*/
 const topics = [
-  "Use AR (Augmented Reality) to create an educational exhibit", 
-  "Design an interactive exhibit about water resource protection", 
-  "Combine two different technologies to create an interactive exhibit",
-  "Design an exhibit based on your first impression of Pittsburgh", 
-  "Design an exhibit that can be easily updated yearly", 
-  "Use Kinect to create an exhibit about climate change", 
-  "Design an exhibit based on a personal hobby", 
-  "Design an exhibit centered on the relationship between couples", 
-  "Use a mobile app in an unconventional way as part of an exhibit",  
-  "Highlight women’s contributions to science and technology", 
-  "Highlight minorities’ contributions to science and technology", 
-  "Highlight a scientist who you believe deserves more recognition",  
-  "Design an exhibit to reflect monthly astronomy discoveries",  
-  "Combat health misinformation amongst the public", 
-  "Combat climate change misinformation amongst the public", 
-  "Create an interactive learning experience for large groups", 
-  "Create an immersive experiential event for visitors" 
+"Use AR (Augmented Reality) for an educational experience",
+"Design an interactive experience on water resource protection",
+"Combine two different technologies for an interactive experience",
+"Design an experience based on your impression of Pittsburgh", 
+"Design an exhibit that can be easily updated yearly", 
+"Use gesture technology to create an experience on climate change", 
+"Design an experience based on a personal hobby", 
+"Use a mobile app in an unconventional way",  
+"Highlight women’s contributions to science and technology",  
+"Highlight minorities’ contributions to science and technology", 
+"Highlight a scientist who you believe deserves more recognition",  
+"Design an experience to reflect monthly astronomy discoveries", 
+"Combat health misinformation", 
+"Combat climate change misinformation", 
+"Create an interactive learning experience for large groups", 
+"Create an immersive experiential event", 
+"Create a VR (Virtual Reality) experience on the pandemic" 
 ];
 
+//Technology, Science, Diversity
 const topics_category = [
   "Technology",
   "Science",
   "Technology",
+  "Diversity",
   "Technology",
   "Technology",
-  "Technology",
-  "Technology",
-  "Technology",
+  "Diversity",
   "Technology",
   "Diversity",
   "Diversity",
   "Diversity",
+  "Science",
   "Science", 
   "Science",
-  "Science",
-  "Technology",
+  "Diversity",
+  "Diversity",
   "Technology"
 ];
 
@@ -138,12 +139,13 @@ const refinements = [
   "Includes all age groups", 
   "Accessible for physically disabled individuals",
   "Easy to maintain social distance",
-  "Acts as a landmark exhibit",
+  "Acts as a local landmark",
   "Can be a traveling exhibit",
   "Requires communication with other visitors",
-  "Combines storytelling with the project",
-  "Let visitors become a part of the exhibition",
-  "An feet-interact exhibition",
+  "Integrates storytelling into the experience",
+  "Lets visitors become a permanent part of the experience",
+  "Lets visitors enjoy a personalized experience", 
+  "Improves visitors’ mental health",
   "Costs 300 dollars to visit",
   "Requires visitors to wear sports clothes",
   "Opens only at night",
@@ -153,22 +155,25 @@ const refinements = [
   "Involves pop culture (anime, superheroes, etc.)",
   "Requires visitors to wear Halloween costumes", 
   "Primarily targeted towards visitors’ pets", 
-  "Constructed out of edible materials"
+  "Constructed out of edible materials",
+  "Suitable for a romantic date night"
+
 ];
 
 const personalInterests=[
   "Makes you laugh out loud",
-  "Sounds like a colorful exhibition",
-  "Your parents would enjoy the exhibition",
+  "Your parents would enjoy the experience",
   "Uses technology that you’re unfamiliar with",
-  "Uses technology that you own", 
-  "Similar to an existing exhibit you’ve visited", 
+  "Uses technology that you already own", 
+  "Similar to an existing experience you know about",
   "You’re an animal-lover",
   "You’re a nature-lover",
-  "You’d like a shorter project introduction",
-  "You’d want the most expensive idea",
-  "You want to keep the costs down",
-  'Easiest to visualize in your mind' 
+  "You want the pitch with the shortest explanation", 
+  "You want the most expensive pitch",
+  "You want the most affordable pitch",
+  "You want an experience that looks good on social media",
+  "Easiest pitch for you to visualize in your mind", 
+  "You want high visitor throughput"  
 ];
 
 function getRandomInt(min, max) {
@@ -217,10 +222,12 @@ function showTopic(){
   var code1 = document.getElementById('topicCode').value.substring(0,1);
   var code1Num = code1.charCodeAt(0)-65;
   var code2 = parseInt(document.getElementById('topicCode').value.substring(1));
+  //Designer Page
   document.getElementById("designTopic").innerHTML = topics[code1Num];
   document.getElementById("designRefinement").innerHTML = refinements[code2];
   document.getElementById("checkDiv").style.display="none";
   show(document.getElementById("designTopicDiv"));
+  //Investor Page
 
 }
 

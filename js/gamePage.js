@@ -16,11 +16,22 @@ function hide(element){
 ----------------------------------------------------------------*/
 
 function rulesShow(){
-  show(document.getElementById("popupRules"));
+  show(document.getElementById("popupRulesModal"));
 }
 
 function rulesClose(){
-  hide(document.getElementById("popupRules"));
+  hide(document.getElementById("popupRulesModal"));
+}
+
+/* --------------------------------------------------------------
+ # Rules - close and show 
+----------------------------------------------------------------*/
+function QuitPopupShow(){
+  show(document.getElementById("quitPopup"));
+}
+
+function QuitPopupClose(){
+  hide(document.getElementById("quitPopup"));
 }
 
 
@@ -53,7 +64,7 @@ function startTimer(){
   clock=setInterval(timer,1000);
   hide(document.getElementById("timerBtn"));
   document.getElementById("retimerBtn").style.display="inline-block";
-  document.getElementById("investorPage2Btn").style.display="inline-block";  
+  //document.getElementById("investorPage2Btn").style.display="inline-block";  
 }
 
 function stopTimer(){
@@ -72,6 +83,12 @@ function restartTimer(){
   stopTimer();
   second=30;
   clock=setInterval(timer,1000);
+}
+
+function pauseTimer(){
+  stopTimer();
+  show(document.getElementById("timerBtn"));
+  document.getElementById("retimerBtn").style.display="none";
 }
 
 /*--End Timer----------------*/

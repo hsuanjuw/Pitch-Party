@@ -10,17 +10,17 @@
 <body class="investor-bg">
 	<div class="header">
 		<button onclick="rulesShow()"><img src="img/Icon/question.png" class="homeIcon"></button>
-		<a href="index.html"><img src="img/Icon/quit.png" class="homeIcon"></a> 
+		<button onclick="QuitPopupShow()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
 	</div>
 
 	<!-----------------------------------------
 		# Rules - Popup 
 	------------------------------------------->
-	<div id="popupRules" class="modal hide">
+	<div id="popupRulesModal" class="myModal hide">
 
 	  <!-- Modal content -->
-	  <div class="modal-content">
-		<button onclick="rulesClose()"><img src="img/Icon/close.png" class="homeIcon"></button>
+	  <div class="myModal-content">
+		<button onclick="rulesClose()"><img src="img/Icon/close.png" class="crossIcon-img"></button>
 		<div class="center popupRulesTitle">
 			<h2>Game rules</h2>
 		</div>
@@ -35,6 +35,25 @@
 			</ol>
 		</div>
 	  </div>
+	</div>
+
+	<!-----------------------------------------
+		# Quit - Popup 
+	------------------------------------------->
+	<div id="quitPopup" class="myModal hide">
+
+		<!-- Modal content -->
+		<div class="quit-content">
+		  
+			<div class="center">
+				<h3 class="quitText">Are you sure you want to quit the game?</h3>
+				<div class="quitBtnDiv">
+					<button class="generalBtn quitBtn" onclick="QuitPopupClose()">No</button>
+					<a href="index.html"><button class="generalBtn quitBtn">Yes</button></a>					
+				</div>
+
+		  	</div>
+		</div>
 	</div>
 
 	<!-----------------------------------------
@@ -73,7 +92,8 @@
 	<!-----------------------------------------
 		# hintPage 
 	------------------------------------------->
-	<div id="inspirationHints" class="modal hide">
+	<div id="inspirationHints" class="myModal hide">
+
 		<!-- Modal content -->
 		<div class="inspiration-content">
 			<div class="crossIcon-btnDiv">

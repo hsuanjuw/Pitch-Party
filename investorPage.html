@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/style.css">
 
 	<script src="js/gamePage.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -13,17 +13,17 @@
 <body onload="randomContent()" class="investor-bg">
 	<div class="header">
 		<button onclick="rulesShow()"><img src="img/Icon/question.png" class="homeIcon"></button>
-		<a href="index.html"><img src="img/Icon/quit.png" class="homeIcon"></a> 
+		<button onclick="QuitPopupShow()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
 	</div>
 
 	<!-----------------------------------------
 		# Rules - Popup 
 	------------------------------------------->
-	<div id="popupRules" class="modal hide">
+	<div id="popupRulesModal" class="myModal hide">
 
 	  <!-- Modal content -->
-	  <div class="modal-content">
-		<button onclick="rulesClose()"><img src="img/Icon/close.png" class="homeIcon"></button>
+	  <div class="myModal-content">
+		<button onclick="rulesClose()"><img src="img/Icon/close.png" class="crossIcon-img"></button>
 		<div class="center popupRulesTitle">
 			<h2>Game rules</h2>
 		</div>
@@ -38,6 +38,25 @@
 			</ol>
 		</div>
 	  </div>
+	</div>
+	
+	<!-----------------------------------------
+		# Quit - Popup 
+	------------------------------------------->
+	<div id="quitPopup" class="myModal hide">
+
+		<!-- Modal content -->
+		<div class="quit-content">
+		  
+			<div class="center">
+				<h3 class="quitText">Are you sure you want to quit the game?</h3>
+				<div class="quitBtnDiv">
+					<button class="generalBtn quitBtn" onclick="QuitPopupClose()">No</button>
+					<a href="index.html"><button class="generalBtn quitBtn">Yes</button></a>					
+				</div>
+
+		  	</div>
+		</div>
 	</div>
 
 	<!-----------------------------------------
@@ -58,7 +77,8 @@
 		<h3 class="investorPage1-note"> Read the <b>Pitch Topic</b> and <b>Requirement</b> <br>to the Designers!</h3>
 		<div class="investorPage1-btnDiv">
 			<button class="generalBtn3" onclick="randomContent()">
-				<img src="img/Icon/reroll.png" class="rerollIcon"> Reroll
+				<img src="img/Icon/reroll.png" class="rerollIcon"> 
+				<h2>Reroll</h2>
 			</button>
 			<button class="generalBtn" onclick="showInvestorPage2()">Next</button>			
 		</div>
@@ -75,8 +95,8 @@
 			<button id="timerBtn" class=" " onclick="startTimer()">
 				<img src="img/Icon/play.png" class="timerBtn-img">
 			</button>
-			<button id="retimerBtn" class="hide" onclick="restartTimer()">
-				<img src="img/Icon/reset.png" class="timerBtn-img">
+			<button id="retimerBtn" class="hide" onclick="pauseTimer()">
+				<img src="img/Icon/pause.png" class="timerBtn-img">
 			</button>
 		</div>
 		<div class="refinement">

@@ -199,17 +199,17 @@ function randomTopic(){
 
 function randomRefinement() {
     var randomInt = getRandomInt(0, refinements.length);
-    document.getElementById("pitchRefinement1").innerHTML = "<b>"+refinements[randomInt]+"</b>";
-    document.getElementById("pitchRefinement2").innerHTML = "<b>"+refinements[randomInt]+"</b>";
-    document.getElementById("pitchRefinement3").innerHTML = "<b>"+refinements[randomInt]+"</b>";
-    document.getElementById("pitchRefinement4").innerHTML = "<b>"+refinements[randomInt]+"</b>";
+    document.getElementById("pitchRefinement1").innerHTML = refinements[randomInt];
+    document.getElementById("pitchRefinement2").innerHTML = refinements[randomInt];
+    document.getElementById("pitchRefinement3").innerHTML = refinements[randomInt];
+    document.getElementById("pitchRefinement4").innerHTML = refinements[randomInt];
 }
 
 function randomPersonalInterest(){
     var randomInt = getRandomInt(0, personalInterests.length);
-    document.getElementById("personalInterest1").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";
-    document.getElementById("personalInterest2").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";
-    document.getElementById("personalInterest3").innerHTML = "<b>"+personalInterests[randomInt]+"</b>";  
+    document.getElementById("personalInterest1").innerHTML = personalInterests[randomInt];
+    document.getElementById("personalInterest2").innerHTML = personalInterests[randomInt];
+    document.getElementById("personalInterest3").innerHTML = personalInterests[randomInt];  
 }
 
 function randomContent(){

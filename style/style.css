@@ -529,7 +529,7 @@ p, h4{
   font-family: "buttonFont";  
 }
 
-.design-refinement{
+/*.design-refinement{
   background-color: rgb(241, 241, 241, 0.5);
   width: 85%;
   padding-top: 5%;
@@ -541,6 +541,30 @@ p, h4{
   border: 2px solid #f1f1f1;
   border-radius: 5px;
   margin-top: 5%;
+}*/
+
+.design-refinement{
+  background-color: rgb(241, 241, 241, 0.5);
+  width: 85%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  margin-top: 5%;  
+}
+
+.design-refinement-titleDiv{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+
+.design-refinement h4{
+    padding-top: 3%;
 }
 
 .design-refinement h3{
@@ -560,9 +584,6 @@ p, h4{
   background-color: white;
   box-shadow: 1px 1px 2px grey; 
   padding:0;
-  margin-top: 2%;
-  margin-left: auto !important;
-  margin-right: 0 !important;
 }
 
 .inspirationDiv{

@@ -879,6 +879,8 @@ p, h4{
 --------------------------------------------------*/
 
 .endingTitleTxt{
+    font-size: 28px;
+    font-weight: bold;
     margin-top: 5%;
     padding-left: 10%;
     padding-right: 10%;

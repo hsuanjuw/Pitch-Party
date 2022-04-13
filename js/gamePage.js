@@ -254,13 +254,16 @@ function showTopic(){
 }
 
 //Designer Page Enter to Submit//
-var input = document.getElementById("topicCode");
+function  submitCode(){
+  var input = document.getElementById("topicCode");
 
-input.addEventListener("keyup",function(event){
-  if(event.key==="Enter"){
-    event.preventDefault();
-    document.getElementById("submitCodebtn").click();
-  }
-});
+  input.addEventListener("keyup",function(event){
+    if(event.key==="Enter"){
+      event.preventDefault();
+      document.getElementById("submitCodebtn").click();
+    }
+  });
+}
+
 
 

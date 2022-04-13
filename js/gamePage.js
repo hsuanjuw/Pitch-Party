@@ -257,7 +257,7 @@ function showTopic(){
 var input = document.getElementById("topicCode");
 
 input.addEventListener("keyup",function(event){
-  if(event.key=="Enter"){
+  if(event.key==="Enter"){
     event.preventDefault();
     document.getElementById("submitCodebtn").click();
   }

@@ -227,8 +227,8 @@ function randomRefinement() {
 function randomPersonalInterest(){
     var randomInt = getRandomInt(0, personalInterests.length);
     document.getElementById("personalInterest1").innerHTML = personalInterests[randomInt];
-    document.getElementById("personalInterest2").innerHTML = personalInterests[randomInt];
-    document.getElementById("personalInterest3").innerHTML = personalInterests[randomInt];  
+    // document.getElementById("personalInterest2").innerHTML = personalInterests[randomInt];
+    // document.getElementById("personalInterest3").innerHTML = personalInterests[randomInt];  
 }
 
 function randomContent(){

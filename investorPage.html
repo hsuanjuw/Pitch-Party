@@ -94,7 +94,10 @@
 		# InvestorPage2
 	------------------------------------------->
 	<div id="investorPage2" class="center hide">
-		<h2 class="investorpages-title"> Give <b>Designers</b> <br> 30 seconds to <b>brainstorm</b>.<br> </h2>
+		<!-- Title -->
+		<h2 class="investorpages-title"> Give <b>Designers</b> time to <b>brainstorm</b>.<br> </h2>
+
+		<!-- Timer -->
 		<div class="timerBlock">
 			<h1 id="timerText">0:30</h1>
 			<button id="timerBtn" class=" " onclick="startTimer()">
@@ -104,34 +107,24 @@
 				<img src="img/Icon/pause.png" class="timerBtn-img">
 			</button>
 		</div>
-		<!-- <div class="refinement">
-			<h2 class="refinement-title"><b style="color:#e43e7e">SECRET</b>  Personal Interest</h2>
-			<br>
-			<h2 id="personalInterest1" class="refinement-content"><b>kkk</b></h2>
-		</div> -->
-		<br>
-		<!-- <h4 class="note">
-			* Personal interest is for you<br> 
-			to have criteria for judgement.<br>
-			<b>Keep it secret</b> to all the designers.
-		</h4> -->
+		<!-- End of Timer -->
 
-		<div class="accordion" id="accordionExample">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header" id="headingOne">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-		        Pitch Topic & Requirement
-		      </button>
-		    </h2>
-		    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-		      <div class="accordion-body">
-		        <h3 id="pitchTopic2">Highlighting Women in Science and Technology</h3>
-		      	<hr>
-		        <h3 id="pitchRefinement2">Highlighting Women in Science and Technology</h3>
-		      </div>
-		    </div>
-		  </div>
+		<!-- Topic and requirement-->
+		<div class="refinement">
+			<div class="refinement-titleDiv">
+				<h4 class="refinement-title"> Pitch Topic & Requirement</h4>
+			</div>			
+			<hr class="seperateLine">
+			<h3 id="pitchTopic2"><b>Highlighting Women in Science and Technology</b></h3>			
+			<hr class="seperateLine">
+			<h3 id="pitchRefinement2"><b>Includes All Age Groups</b></h3>
+			<hr class="seperateLine">
+			<div class="refinement-titleDiv">
+				<h4 class="refinement-title"> Topic Code: <span id="investorTopicCode2">A12</span></h4>
+			</div>
 		</div>
+		<!-- End of Topic and requirement-->
+		<br>
 		<button id="investorPage2Btn" class="generalBtn2 " onclick="showInvestorPage3()">End Brainstorming</button>
 	</div>
 
@@ -139,51 +132,39 @@
 		# InvestorPage3
 	------------------------------------------->
 	<div id="investorPage3" class="center hide">
+		<!-- Title -->
 		<h2 class="investorpages-title">Ask <b>Designers</b>  <br>to <b>pitch</b> their ideas.<br> </h2>
 		<br>
-		<button class="generalBtn2" onclick="showInvestorPage4()">Finish Pitching</button>
-		<!-- <div class="refinement">
-			<h2 class="refinement-title"><b style="color:#e43e7e">SECRET</b>  Personal Interest</h2>
-			<h2 id="personalInterest2" class="refinement-content"><b></b></h2>
-		</div> -->
-		<br>
-		<br>
-		<br>
 
-<!-- 		<div class="refinement">
-			<h3>Pitch topic:</h3>
-			<h3 id="pitchTopic3"><b>Highlighting Women in Science and Technology</b></h3>
-			
-			<hr>
-			<h3>Refinement:</h3>
+		<!-- Finish pitching button-->
+		<button class="" onclick="showInvestorPage4()">Finish Pitching</button>
+
+		<!-- Topic and requirement-->
+		<div class="refinement">
+			<div class="refinement-titleDiv">
+				<h4 class="refinement-title"> Pitch Topic & Requirement</h4>
+			</div>			
+			<hr class="seperateLine">
+			<h3 id="pitchTopic3"><b>Highlighting Women in Science and Technology</b></h3>			
+			<hr class="seperateLine">
 			<h3 id="pitchRefinement3"><b>Includes All Age Groups</b></h3>
-		</div> -->
-
-		<div class="accordion" id="accordionExample">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header" id="headingTwo">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		        Pitch Topic & Requirement
-		      </button>
-		    </h2>
-		    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-		      <div class="accordion-body">
-		        <h3 id="pitchTopic3">Highlighting Women in Science and Technology</h3>
-		      	<hr>
-		        <h3 id="pitchRefinement3">Highlighting Women in Science and Technology</h3>
-		      </div>
-		    </div>
-		  </div>
+			<hr class="seperateLine">
+			<div class="refinement-titleDiv">
+				<h4 class="refinement-title"> Topic Code: <span id="investorTopicCode2">A12</span></h4>
+			</div>
 		</div>
-
+		<!-- End of Topic and requirement-->
 	</div>
 
 	<!-----------------------------------------
 		# InvestorPage4
 	------------------------------------------->
-	<div id="investorPage4" class="center hide ">
+	<div id="investorPage4" class="center hide">
+		<!-- Title -->
 		<h2 class="endingTitleTxt"> Select your favorite pitch! </h2>
 		<br>
+
+		<!-- Personal interest accordion -->
 		<div class="accordion" id="accordionExample3">
 			<div class="accordion-item">
 			  <h2 class="accordion-header" id="headingFour">
@@ -193,30 +174,30 @@
 			  </h2>
 			  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample3">
 				<div class="accordion-body">
-				  <h3 id="personalInterest2"><b></b></h3>
-				  <hr>
-				  <h3>Use Personal Interest as a judging criteria</h3>
+				  <h3 id="personalInterest1"><b>Includes All Age Groups</b></h3>
+				  <p class="note">Use Personal Interest as a judging criteria</p>
 				</div>
 			  </div>
 			</div>
 		  </div>
+		  <!-- End of Personal interest accordion -->
 		<br>
-		<div class="accordion" id="accordionExample2">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header" id="headingThree">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		        Pitch Topic & Requirement
-		      </button>
-		    </h2>
-		    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
-		      <div class="accordion-body">
-		        <h3 id="pitchTopic4"><b></b></h3>
-		      	<hr>
-		        <h3 id="pitchRefinement4"><b></b></h3>
-		      </div>
-		    </div>
-		  </div>
+
+		<!-- Topic and requirement-->
+		<div class="refinement">
+			<div class="refinement-titleDiv">
+				<h4 class="refinement-title"> Pitch Topic & Requirement</h4>
+			</div>			
+			<hr class="seperateLine">
+			<h3 id="pitchTopic4"><b>Highlighting Women in Science and Technology</b></h3>			
+			<hr class="seperateLine">
+			<h3 id="pitchRefinement4"><b>Includes All Age Groups</b></h3>
+			<hr class="seperateLine">
+			<div class="refinement-titleDiv">
+				<h4 class="refinement-title"> Topic Code: <span id="investorTopicCode2">A12</span></h4>
+			</div>
 		</div>
+		<!-- End of Topic and requirement-->
 		<br>
 		<a href="gamePage2.html"><button class="generalBtn2" onclick="">Play Again</button></a> 
 	</div>

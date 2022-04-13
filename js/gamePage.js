@@ -253,5 +253,14 @@ function showTopic(){
 
 }
 
+//Designer Page Enter to Submit//
+var input = document.getElementById("topicCode");
+
+input.addEventListener("keyup",function(event){
+  if(event.key===13){
+    event.preventDefault();
+    document.getElementById("submitCodebtn").click();
+  }
+});
 
 

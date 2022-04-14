@@ -12,12 +12,12 @@
 </head>
 <body class="investor-bg" onload="onLoadScoring()">
 	<div class="header">
-		<button onclick="rulesShow()"><img src="img/Icon/question.png" class="homeIcon"></button>
+		<button onclick="rulesShow();playButtonSound()"><img src="img/Icon/question.png" class="homeIcon"></button>
 		<div class="center">
 			<p class="scoreTitle">Score:</p>
 			<h2 id="score"></h2>
 		</div>
-		<button onclick="QuitPopupShow()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
+		<button onclick="QuitPopupShow();playButtonSound()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
 	</div>
 
 	<!-----------------------------------------
@@ -55,7 +55,7 @@
 			<div class="center">
 				<h3 class="quitText">Are you sure you want to quit the game?</h3>
 				<div class="quitBtnDiv">
-					<button class="generalBtn quitBtn" onclick="QuitPopupClose()">No</button>
+					<button class="generalBtn quitBtn" onclick="QuitPopupClose();playButtonSound()">No</button>
 					<a href="index.html"><button class="generalBtn quitBtn">Yes</button></a>					
 				</div>
 
@@ -72,8 +72,8 @@
 			Everyone else is a <b>Designer</b>.
 		</h2>
 		<div class="choiceBtnDiv">
-			<a href="investorPage.html"><button class="choiceBtn" onclick="">I'm the Funder</button></a> 
-			<a href="designerPage.html"><button class="choiceBtn" onclick="">I'm a Designer</button></a> 			
+			<a href="investorPage.html"><button class="choiceBtn" onclick="playButtonSound()">I'm the Funder</button></a> 
+			<a href="designerPage.html"><button class="choiceBtn" onclick="playButtonSound()">I'm a Designer</button></a> 			
 		</div>
 	</div>
 

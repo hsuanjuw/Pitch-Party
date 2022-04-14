@@ -256,13 +256,26 @@ function showTopic(){
 //Designer Page Enter to Submit//
 function  submitCode(){
   var input = document.getElementById("topicCode");
-
   input.addEventListener("keyup",function(event){
     if(event.key==="Enter"){
       event.preventDefault();
       document.getElementById("submitCodebtn").click();
     }
   });
+}
+
+//Play onClick Sound
+function playButtonSound(){
+  var audio = new Audio();
+  audio.src="sound/Button_Click.wav";
+  audio.play();
+}
+
+//Play BGM
+function playBGM(){
+  var audio = new Audio();
+  audio.src="sound/BGM.mp3";
+  audio.play();
 }
 
 

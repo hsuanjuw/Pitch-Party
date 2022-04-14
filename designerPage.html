@@ -12,10 +12,6 @@
 <body class="investor-bg" onload="onLoadScoring()">
 	<div class="header">
 		<button onclick="rulesShow();playButtonSound()"><img src="img/Icon/question.png" class="homeIcon"></button>
-		<div class="center">
-			<p class="scoreTitle">Score:</p>
-			<h2 id="score"></h2>
-		</div>
 		<button onclick="QuitPopupShow();playButtonSound()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
 	</div>
 
@@ -103,8 +99,8 @@
 		</div>	 -->	
 		
 		<div class="designerBtn-div">
-			<a href="gamePage2.html"><button class="designer-btn" onclick="playButtonSound()">Play Again</button></a>
-			<a href="gamePage2.html"><button class="designer-btn" onclick="playButtonSound();scoring()">Pitch Accepted</button></a>
+			<a href="gamePage2.html"><button class="designer-btn" onclick="playButtonSound();addRound();">Play Again</button></a>
+			<a href="gamePage2.html"><button class="designer-btn" onclick="playButtonSound();scoring();addRound();">Pitch Accepted</button></a>
 		</div>
 		
 	<!-----------------------------------------

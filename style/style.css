@@ -100,13 +100,12 @@ p, h4{
   width: 10%;
 }
 
-.scoreTitle{
-  margin: 0;
-  font-size: 8px;
-}
 
-#score{
+.record{
   margin: 0;
+  font-size: 14px;
+  font-family: "mainFontMedium";
+  color: #4E4E4E;
 }
 
 .homeIcon {
@@ -425,7 +424,7 @@ p, h4{
 
 .mainText h2{
   font-weight: normal;
-  color: #4d4d4d;
+  color: #4E4E4E;
   font-size: 24px;
   line-height: 150%;
   margin-bottom: 0;
@@ -482,6 +481,7 @@ p, h4{
 
 .designer-txt{
   font-size: 18px;
+  color: #4E4E4E;
 }
 
 #topicCode{
@@ -846,7 +846,8 @@ p, h4{
 .refinement-title{
   margin: 0;
   font-size: 16px !important;
-  font-weight: normal;
+  font-family: "mainFontMedium";
+  color: #4E4E4E;
 }
 
 .refinement span{
@@ -877,6 +878,7 @@ p, h4{
 #pitchTopic2, #pitchRefinement2, #pitchTopic3, #pitchRefinement3,#pitchTopic4,#pitchRefinement4, #designTopic, #designRefinement, #personalInterest1 {
   font-size: 20px;
   font-family: "mainFontBold";
+  color: #4E4E4E;
 }
 /*--------------------------------------------------
   # Investor Page 3

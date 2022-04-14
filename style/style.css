@@ -677,9 +677,6 @@ p, h4{
   background-attachment: fixed;
 }
 
-#investorPage1 h3{
-  font-weight: normal;
-}
 
 /*.pitchTopic-content{
   background-color: #f1f1f1;
@@ -738,18 +735,6 @@ p, h4{
   padding-bottom: 3%;
 }
 
-/*#pitchTopic-img {
-  width: 100%;
-}
-
-#requirement-img {
-  width: 100%;
-}
-*/
-
-
-
-
 #investorTopicCode{
   font-family: "mainFontBold"; 
   margin: 0;
@@ -762,10 +747,14 @@ p, h4{
 }
 
 #pitchTopic1, #pitchRefinement1{
-  font-family: "mainFontBold" !important;
+  font-family: "mainFontRegular" !important;
+  font-size: 20px !important;
 }
 
-
+.content h3{
+  font-family: "mainFontBold" !important;
+  font-size: 20px !important;  
+}
 
 .refinementText{
   margin-bottom: 0;
@@ -779,7 +768,6 @@ p, h4{
   font-size: 18px;
 }
 
-
 .rerollIcon{
   width: 40%;
 }
@@ -791,6 +779,14 @@ p, h4{
   margin-top: 7%;  
 }
 
+/*#pitchTopic-img {
+  width: 100%;
+}
+
+#requirement-img {
+  width: 100%;
+}
+*/
 /*--------------------------------------------------
  # Investor Page 2
 --------------------------------------------------*/

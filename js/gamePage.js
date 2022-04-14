@@ -40,6 +40,8 @@ function QuitPopupClose(){
 ---------------------------------------------------------------*/
 
 function showInvestorPage2(){
+  document.getElementsByTagName('body')[0].classList.remove("investor-bg-sci");
+  document.getElementsByTagName('body')[0].classList.toggle("investor-bg");
   hide(document.getElementById("investorPage1"));
   show(document.getElementById("investorPage2"));
 }
@@ -203,15 +205,15 @@ function randomTopic(){
     document.getElementById("pitchTopic2").innerHTML = topics[randomInt];
     document.getElementById("pitchTopic3").innerHTML = topics[randomInt];
     document.getElementById("pitchTopic4").innerHTML = topics[randomInt];
-    if(topics_category[randomInt]=="Technology"){
-      document.getElementById("pitchTopic-img").src = "img/investor/topic_tech.png";
-    }
-    else if(topics_category[randomInt]=="Science"){
-      document.getElementById("pitchTopic-img").src = "img/investor/topic_sci.png";
-    }
-    else if(topics_category[randomInt]=="Diversity"){
-      document.getElementById("pitchTopic-img").src = "img/investor/topic_div.png";
-    }
+    // if(topics_category[randomInt]=="Technology"){
+    //   document.getElementById("pitchTopic-img").src = "img/investor/topic_tech.png";
+    // }
+    // else if(topics_category[randomInt]=="Science"){
+    //   document.getElementById("pitchTopic-img").src = "img/investor/topic_sci.png";
+    // }
+    // else if(topics_category[randomInt]=="Diversity"){
+    //   document.getElementById("pitchTopic-img").src = "img/investor/topic_div.png";
+    // }
     return randomInt;
 }
 

@@ -487,6 +487,11 @@ p, h4{
 #topicCode{
   width: 45%;
   height: 30px;
+  font-size: 13px;
+}
+
+::placeholder { 
+  color: #c4c4c4;
 }
 
 #checkDiv{

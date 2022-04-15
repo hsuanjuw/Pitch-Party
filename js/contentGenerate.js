@@ -345,7 +345,9 @@ function showTopic(){
   var code2 = parseInt(document.getElementById('topicCode').value.substring(1));
   //Designer Page
   if(code1Num in contentDic ){
-    hide(document.getElementById("invalidCodeTxt"));
+    if(!(document.getElementById("invalidCodeTxt").classList.contains('hide'))){ 
+      hide(document.getElementById("invalidCodeTxt")); 
+    }
     document.getElementById("designTopic").innerHTML = contentDic[code1Num]["topic"];
     document.getElementById("designRefinement").innerHTML = refinements[code2];
     document.getElementById("checkDiv").style.display="none";    
@@ -375,3 +377,4 @@ function hintShow(){
 function hintClose(){
   hide(document.getElementById("inspirationHints"));
 }
+

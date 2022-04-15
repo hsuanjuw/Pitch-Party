@@ -582,7 +582,7 @@ p, h4{
   margin-bottom: 0;
 }
 
-.inspirationBtn{
+#inspirationBtn{
   width: 12%;
   border: 2px solid #29ABE2;
   border-radius: 8px;
@@ -603,8 +603,8 @@ p, h4{
   border: 1px solid #f1f1f1;
   box-shadow: 1px 3px #e3e1e1;
   border-radius: 10px;
-  width: 80%;
-  height: 50%;
+  width: 90%;
+  height: 60%;
   padding: 3%;
   position: absolute;
   left: 50%;
@@ -613,23 +613,32 @@ p, h4{
   transform: translate(-50%, -50%);
 }
 
-.inspiration-title h2{
+#inspirationTitle1{
   margin-top: 0;
   margin-bottom: 1%;
   font-family: mainFontBold;
+  font-size: 18px;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
 }
 
-.inspiration-title{
+.inspiration-popup{
   position: absolute;
+  height: 85%;
   left: 50%;
-  top: 10%;
+  top: 55%;
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); 
 }
 
-.InspirationImg{
-  width: 50%;
+.Inspiration-img{
+  width: 70%;
+  height: 133px;
 }
 
 .crossIcon-img{
@@ -654,8 +663,28 @@ p, h4{
 }
 
 .Inspiration-txt{
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal !important;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 8%;
+}
+
+.inspiration-indicator{
+  position: absolute;
+  top: 95%;
+  color: black;
+}
+
+.carousel .carousel-indicators button{background-color: #d9cccc;}
+.carousel .carousel-indicators .active {background-color: #bdb1b1;}
+
+span.carousel-control-next-icon {
+  background-image: url("../img/Icon/right-arrow.png");
+}
+
+span.carousel-control-prev-icon {
+  background-image: url("../img/Icon/left-arrow.png");
 }
 
 /*--------------------------------------------------

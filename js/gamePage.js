@@ -195,6 +195,31 @@ const personalInterests=[
   "You want high visitor throughput"  
 ];
 
+let inspirationDic = {
+  0:{
+      topic : "Use AR (Augmented Reality) for an educational experience",
+      category : "Technology",
+      inspiration : [
+        "eee",
+        "www",
+        "ddd"
+      ],
+    }, 
+  1:{
+      topic : "Use AR (Augmented Reality) for an educational experience",
+      category : "Technology",
+      inspiration : [
+        "aaa",
+        "bbb",
+        "ccc"
+      ],
+    },
+};
+
+function test1(){
+  alert(inspirationDic[1]["inspiration"][0]);
+}
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }

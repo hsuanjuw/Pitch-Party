@@ -42,9 +42,9 @@ let contentDic = {
        ],
       imgs : [
         "img/inspiration/Pittsburgh_Bridges.png",
-        "img/inspiration/Pittsburgh_Emoticons.png",
+        "img/inspiration/Pittsburgh_Emoticon.png",
         "img/inspiration/Pittsburgh_Jonas_Salk.png",
-        "img/inspiration/Pittsburgh_Mister_Rogers’_Neighborhood.png"
+        "img/inspiration/Pittsburgh_Mister_Rogers_Neighborhood.png"
       ]
     },
   3:{

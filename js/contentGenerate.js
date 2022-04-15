@@ -344,15 +344,19 @@ function showTopic(){
   var code1Num = code1.charCodeAt(0)-65;
   var code2 = parseInt(document.getElementById('topicCode').value.substring(1));
   //Designer Page
-  document.getElementById("designTopic").innerHTML = contentDic[code1Num]["topic"];
-  document.getElementById("designRefinement").innerHTML = refinements[code2];
-  document.getElementById("checkDiv").style.display="none";
+  if(code1Num in contentDic ){
+    hide(document.getElementById("invalidCodeTxt"));
+    document.getElementById("designTopic").innerHTML = contentDic[code1Num]["topic"];
+    document.getElementById("designRefinement").innerHTML = refinements[code2];
+    document.getElementById("checkDiv").style.display="none";    
+  }else{
+    show(document.getElementById("invalidCodeTxt"));
+  }
+
   if("inspiration" in contentDic[code1Num]){
     show(document.getElementById("inspirationBtn"));
   }
   show(document.getElementById("designTopicDiv"));
-  //Investor Page
-
 }
 
 function hintShow(){

@@ -715,7 +715,7 @@ p, h4{
   margin-left: auto;
   width: 85%;
   height: 40%;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 
 .bottom-content{
@@ -737,7 +737,7 @@ p, h4{
   background-image: linear-gradient(to right, #9be8a4, #BADD7F , #d2f081);
   border-radius: 15px;
   position: absolute;
-  top: 6%;
+  top: 12%;
   left: 90%;
   width: 23%;
   transform: translate(-50%, -50%);
@@ -759,12 +759,12 @@ p, h4{
 
 #pitchTopic1, #pitchRefinement1{
   font-family: "mainFontRegular" !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 .content h3{
   font-family: "mainFontBold" !important;
-  font-size: 20px !important;  
+  font-size: 18px !important;  
 }
 
 .refinementText{

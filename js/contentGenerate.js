@@ -337,6 +337,9 @@ function randomContent(){
   randomPersonalInterest();
 
   document.getElementById("investorTopicCode").innerHTML = topicCode+refinementNum.toString();
+  document.getElementById("investorTopicCode2").innerHTML = topicCode+refinementNum.toString();
+  document.getElementById("investorTopicCode3").innerHTML = topicCode+refinementNum.toString();
+  document.getElementById("investorTopicCode4").innerHTML = topicCode+refinementNum.toString();
 }
 
 function showTopic(){

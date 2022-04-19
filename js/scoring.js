@@ -5,7 +5,6 @@ function scoring() {
     } else {
       localStorage.score = 1;
     }
-    document.getElementById("score").innerHTML = localStorage.score;
   }
 }
 
@@ -34,6 +33,5 @@ function addRound(){
     } else {
       localStorage.round = 1;
     }
-    document.getElementById("round").innerHTML = localStorage.round;
   } 
 }

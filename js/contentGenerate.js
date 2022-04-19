@@ -353,7 +353,7 @@ function showTopic(){
     }
     document.getElementById("designTopic").innerHTML = contentDic[code1Num]["topic"];
     document.getElementById("designRefinement").innerHTML = refinements[code2];
-    document.getElementById("checkDiv").style.display="none";    
+    // document.getElementById("checkDiv").style.display="none";    
   }else{
     show(document.getElementById("invalidCodeTxt"));
   }

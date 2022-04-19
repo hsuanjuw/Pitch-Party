@@ -66,7 +66,12 @@ function stopTimer(){
 }
 
 function timer(){
-  document.getElementById('timerText').innerHTML='0:' + second;
+  if(second>9){
+    document.getElementById('timerText').innerHTML='0:' + second;
+  }
+  else{
+    document.getElementById('timerText').innerHTML='0:0' + second;
+  }
   second--;
   if(second<0){
     stopTimer();

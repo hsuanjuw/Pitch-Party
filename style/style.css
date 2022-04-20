@@ -1032,3 +1032,13 @@ span.carousel-control-prev-icon {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+/*--------------------------------------------------
+  # Rules Animation
+--------------------------------------------------*/
+#animation_container, #_preload_div_ {
+position:absolute;
+margin:auto;
+left:0;right:0;
+top:0;bottom:0;
+}

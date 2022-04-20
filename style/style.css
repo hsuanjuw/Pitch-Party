@@ -1036,9 +1036,11 @@ span.carousel-control-prev-icon {
 /*--------------------------------------------------
   # Rules Animation
 --------------------------------------------------*/
-#animation_container, #_preload_div_ {
-position:absolute;
-margin:auto;
-left:0;right:0;
-top:0;bottom:0;
+#animation_container {
+  position:absolute;
+  margin:0;
+  left:0;right:0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
 }

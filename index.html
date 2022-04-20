@@ -5,26 +5,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style/style.css">
 	<script src="js/gamePage.js"></script>
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+	<script src="js/MainPageMascot.js"></script>
+	<script>
+		var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+		function init() {
+			canvas = document.getElementById("canvas");
+			anim_container = document.getElementById("animation_container");
+			dom_overlay_container = document.getElementById("dom_overlay_container");
+			var comp=AdobeAn.getComposition("06452CFBDD652444965CF647AB739A75");
+			var lib=comp.getLibrary();
+			var loader = new createjs.LoadQueue(false);
+			loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+			loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+			var lib=comp.getLibrary();
+			loader.loadManifest(lib.properties.manifest);
+		}
+		function handleFileLoad(evt, comp) {
+			var images=comp.getImages();	
+			if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+		}
+		function handleComplete(evt,comp) {
+			//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+			var lib=comp.getLibrary();
+			var ss=comp.getSpriteSheet();
+			var queue = evt.target;
+			var ssMetadata = lib.ssMetadata;
+			for(i=0; i<ssMetadata.length; i++) {
+				ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+			}
+			exportRoot = new lib.Main_Page();
+			stage = new lib.Stage(canvas);	
+			//Registers the "tick" event listener.
+			fnStartAnimation = function() {
+				stage.addChild(exportRoot);
+				createjs.Ticker.framerate = lib.properties.fps;
+				createjs.Ticker.addEventListener("tick", stage);
+			}	    
+			//Code to support hidpi screens and responsive scaling.
+			AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+			AdobeAn.compositionLoaded(lib.properties.id);
+			fnStartAnimation();
+		}
+	</script>
 	<audio autoplay loop><source src="sound/BGM.mp3" type="audio/mpeg"></audio>
 	<title></title>
 </head>
-<body onload="playButtonSound()">
+<body onload="playButtonSound();init();">
 	<div class="index-bg" style="position: relative;" >
 <!--<div class="title center">
 			<h1>Sci-Com Game</h1>
 		</div> -->	
 		<!-- <iframe width="0" height="0" src="sound/BGM.mp3" frameborder="0" allowfullscreen></iframe>  -->
-		<div class="center buttonDiv">
+		<div class="center buttonDiv" style="z-index: 100;">
 			<!-- <h2>Find someone to begin <br>your game!</h2> -->
-			<a href="gamePage.html">
-				<button class="indexBtn" onclick="playButtonSound()">Start</button>
+			<a href="gamePage.html" style="z-index: 100;">
+				<button class="indexBtn" style="z-index: 100;" onclick="playButtonSound()">Start</button>
 			</a> 
 
-			<a href="rule.html">
-				<button class="indexBtn" onclick="playButtonSound()"> Rules
+			<a href="rule.html" style="z-index: 100;">
+				<button class="indexBtn" style="z-index: 100;" onclick="playButtonSound()" > Rules
 					<!-- <img class="indexBtn-img" src="img/rulesBtn.png"> -->
 				</button>
 			</a> 
+		</div>
+		<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); ">
+			<canvas id="canvas" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00); width:100%; height: 100%;"></canvas>
+			<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height: 100%; position: absolute; left: 0px; bottom: 0px; display: block;">
+			</div>
 		</div>
 	</div>						
 </body>

@@ -301,14 +301,16 @@ p, h4{
 
 .ruleText li{
   padding-left: 3%;
-  margin-top: 5%;
+  margin-top: 12%;
+  margin-bottom: 12%;
 }
 
 .ruleText ol{
-  padding-left: 8%;
-  padding-right: 0;
+  padding-left: 12%;
+  padding-right: 7%;
   margin-bottom: 0;
   position: absolute;
+  font-size: 18px;
   left: 50%;
   top: 40%;
   width: 90%;
@@ -1039,7 +1041,7 @@ span.carousel-control-prev-icon {
 #animation_container {
   position:absolute;
   margin:0;
-  left:0;right:0;
+  right:0;
   bottom:0;
   height: 100%;
   width: 100%;

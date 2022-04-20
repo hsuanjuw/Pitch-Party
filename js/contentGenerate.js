@@ -302,15 +302,15 @@ function randomTopic(){
     document.getElementById("pitchTopic2").innerHTML = contentDic[randomInt]["topic"];
     document.getElementById("pitchTopic3").innerHTML = contentDic[randomInt]["topic"];
     document.getElementById("pitchTopic4").innerHTML = contentDic[randomInt]["topic"];
-    // if(topics_category[randomInt]=="Technology"){
-    //   document.getElementById("pitchTopic-img").src = "img/investor/topic_tech.png";
-    // }
-    // else if(topics_category[randomInt]=="Science"){
-    //   document.getElementById("pitchTopic-img").src = "img/investor/topic_sci.png";
-    // }
-    // else if(topics_category[randomInt]=="Diversity"){
-    //   document.getElementById("pitchTopic-img").src = "img/investor/topic_div.png";
-    // }
+    if(contentDic[randomInt]["category"]=="Technology"){
+      document.body.style.backgroundImage="url(img/investor/investor_bg_tech.png)";
+    }
+    else if(contentDic[randomInt]["category"]=="Science"){
+      document.body.style.backgroundImage="url(img/investor/investor_bg_sci.png)";
+    }
+    else if(contentDic[randomInt]["category"]=="Diversity"){
+      document.body.style.backgroundImage="url(img/investor/investor_bg_div.png)";
+    }
     return randomInt;
 }
 

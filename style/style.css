@@ -1046,3 +1046,13 @@ span.carousel-control-prev-icon {
   height: 100%;
   width: 100%;
 }
+
+/*--------------------------------------------------
+  # Win page
+--------------------------------------------------*/
+
+#winPage{
+  position:absolute;
+  bottom:0;
+  height: 30%;
+}

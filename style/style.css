@@ -1047,12 +1047,24 @@ span.carousel-control-prev-icon {
   width: 100%;
 }
 
+#animation_container_2 {
+  position:absolute;
+  margin:0;
+  right:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+}
+
 /*--------------------------------------------------
   # Win page
 --------------------------------------------------*/
 
 #winPage{
-  position:absolute;
+  position:fixed;
   bottom:0;
-  height: 30%;
+  height: 20%;
+  left: 0;
+  right: 0;
+  width: 80%;
 }

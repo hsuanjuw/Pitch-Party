@@ -108,7 +108,7 @@ let contentDic = {
         "img/inspiration/Women_Chien-Shiung_Wu.png",
         "img/inspiration/Women_Katherine_Johnson.png",
         "img/inspiration/Women_Marie_Curie.png",
-        "img/inspiration/Women_Youyou_Tu.png"
+        "img/inspiration/Women_Tu_Youyou.png"
       ]
     },
   7:{

@@ -3,16 +3,16 @@ let contentDic = {
       topic : "Use AR (Augmented Reality) for an educational experience",
       category : "Technology",
       inspiration : [
-        "Hololens are a pair of mixed reality smart glasses developed and manufactured by Microsoft. ",
+        "Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information.",
         "Mobile phone manufacturers like Apple are combining hardware with machine learning and cutting‑edge developer tools to enable realistic and engaging AR experiences.",
         "Projected AR is technology that directly overlays digitals projections onto the physical world. Unlike smartphone or wearable AR, projected AR does not typically require a device to mediate and project imagery.",
-        "Mixed reality (MR) is the merging of real and virtual worlds to produce new environments and visualizations, where physical and digital objects co-exist and interact in real time."
+        "Hololens is a pair of mixed reality smart glasses developed and manufactured by Microsoft."
       ],
       imgs : [
-        "img/inspiration/AR_Hololens.png",
+        "img/inspiration/AR_AR.png",
         "img/inspiration/AR_Mobile_AR.png",
         "img/inspiration/AR_Projected_AR.png",
-        "img/inspiration/AR_Mixed_Reality.png"
+        "img/inspiration/AR_Hololens.png"
       ]
     }, 
   1:{
@@ -44,11 +44,11 @@ let contentDic = {
         "img/inspiration/Pittsburgh_Bridges.png",
         "img/inspiration/Pittsburgh_Emoticon.png",
         "img/inspiration/Pittsburgh_Jonas_Salk.png",
-        "img/inspiration/Pittsburgh_Mister_Rogers_Neighborhood.png"
+        "img/inspiration/Pittsburgh_Mister_Rogers__Neighborhood.png"
       ]
     },
   3:{
-      topic : "Use gesture technology to create an experience on climate change",
+      topic : "Use gesture technology to create an experience on weather or climate",
       category : "Technology",
       inspiration : [
         "Kinect allows a user to move their body to control games, movies, and more. It makes users feel immersed in a simulated world, via hardware (headsets) and software.",
@@ -96,7 +96,7 @@ let contentDic = {
       ]
     },
   6:{
-      topic : "Highlight women’s contributions to science and technology",
+      topic : "Highlight contributions to science by women and gender minorities",
       category : "Diversity",
       inspiration : [
         "Chien-Shiung Wu (1912 - 1997) was a Chinese American physicist who worked on the Manhattan Project.",
@@ -112,7 +112,7 @@ let contentDic = {
       ]
     },
   7:{
-      topic : "Highlight minorities’ contributions to science and technology",
+      topic : "Highlight contributions to science by traditionally underrepresented groups",
       category : "Diversity",
       inspiration : [
         "George Washington Carver (1864–1943) is an African American scientist who studied agricultural production and promoted new farming methods.",
@@ -155,40 +155,40 @@ let contentDic = {
       imgs : [
         "img/inspiration/Astronomy_Exoplanets.png",
         "img/inspiration/Astronomy_Hubble.png",
-        "img/inspiration/Astronomy_Rovers.png",
+        "img/inspiration/Astronomy_Rover.png",
         "img/inspiration/Astronomy_Space_Travel.png"
       ]
     },
   10:{
-      topic : "Combat health misinformation",
+      topic : "Increase health knowledge within your community",
       category : "Science",
       inspiration : [
-        "Misinformation about cancer. For example, what treatments are effective against cancer? Do alternative health treatments work?",
-        "Misinformation about the coronavirus. For example, which treatments are effective against the coronavirus?",
-        "Teach people how to identify health misinformation. For example, is the information source credible? If the source is a research paper, is it peer reviewed?",
-        "Misinformation about vaccines. For example, the belief that vaccines cause autism."      
+        "What constitutes healthy eating? Can food be both healthy and affordable?",
+        "Equity in health means that all people have equal opportunity to access good quality health care.",
+        "Vaccines are proven to be safe and effective in preventing serious diseases in both children and adults.",
+        "Educate people on how to evaluate sources. How can they determine what information is credible?"      
        ],
       imgs : [
-        "img/inspiration/Health_Misinformation_Cancer.png",
-        "img/inspiration/Health_Misinformation_Coronaviruses.png",
-        "img/inspiration/Health_Misinformation_Identification.png",
-        "img/inspiration/Health_Misinformation_Vaccine.png"
+        "img/inspiration/Health_Communication_Nutrition.png",
+        "img/inspiration/Health_Communication_HealthCare.png",
+        "img/inspiration/Health_Communication_Vaccine.png",
+        "img/inspiration/Health_Communication_Identification.png"
       ]
     },
   11:{
-      topic : "Combat climate change misinformation",
+      topic : "Invite discussion about topics relating to climate change",
       category : "Science",
       inspiration : [
-        "Misinformation on our ability to combat climate change. For example, the belief that it is too late to do anything about climate change.",
-        "Misinformation on the causes of climate change. For example, the belief that humans aren't contributing to climate change.",
-        "Misinformation on whether climate change is real. Some people believe there is no scientific consensus that global warming is currently occurring.",
-        "Teach people how to identify climate change misinformation. For example, is the information source credible?"      
+        "Climate change is the long term shift in temperature and weather pattern. Human activity is one of the driving factors of climate change today.",
+        "Clean energy includes solar, wind, water, and geothermal power. Clean and renewable energy can have positive effects on the environment.",
+        "How can people get involved with initiatives and activities related to climate change?",
+        "Educate people on how to evaluate sources. How can they determine what information is credible?"      
        ],
       imgs : [
-        "img/inspiration/Climate_Misinformation_Ability.png",
-        "img/inspiration/Climate_Misinformation_Causes.png",
-        "img/inspiration/Climate_Misinformation_Rea.png",
-        "img/inspiration/Health_Misinformation_Identification.png"
+        "img/inspiration/Climate_Change_Climate_Change.png",
+        "img/inspiration/Climate_Change_Clean_Energy.png",
+        "img/inspiration/Climate_Change_Involved.png",
+        "img/inspiration/Health_Communication_Identification.png"
       ]
     },
   12:{
@@ -242,11 +242,7 @@ let contentDic = {
   15:{
       topic : "Combine two different technologies for an interactive experience",
       category : "Technology"
-    }, 
-  16:{
-      topic : "Design an exhibit that can be easily updated yearly",
-      category : "Diversity"
-    }  
+    }
 }
 
 const refinements = [

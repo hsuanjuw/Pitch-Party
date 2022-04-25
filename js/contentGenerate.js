@@ -261,34 +261,39 @@ const refinements = [
   "Lets visitors become a permanent part of the experience",
   "Lets visitors enjoy a personalized experience", 
   "Improves visitors’ mental health",
-  "Costs 300 dollars to visit",
+  "Costs more than $100 to visit",
   "Requires visitors to wear sports clothes",
-  "Opens only at night",
-  "Opens for only 1 hour a day",
+  "Open only at night",
+  "Open for only 1 hour a day",
   "Located on top of a mountain",
   "Located at a public transit stop",
-  "Involves pop culture (anime, superheroes, etc.)",
-  "Requires visitors to wear Halloween costumes", 
+  "Involves pop culture such as anime or superheroes",
+  "Requires visitors to wear costumes", 
   "Primarily targeted towards visitors’ pets", 
-  "Constructed out of edible materials",
-  "Suitable for a romantic date night"
-
+  "Incorporates edible materials",
+  "Suitable for a romantic date night",
+  "Can be easily updated yearly",
+  "Only lasts for 24 hours"
 ];
 
 const personalInterests=[
   "Makes you laugh out loud",
-  "Your parents would enjoy the experience",
-  "Uses technology that you’re unfamiliar with",
-  "Uses technology that you already own", 
+  "Your parent would enjoy (or would have enjoyed) the experience",
+  "Uses technology that you’re personally unfamiliar with",
+  "Uses technology that your organization already owns", 
   "Similar to an existing experience you know about",
   "You’re an animal-lover",
   "You’re a nature-lover",
   "You want the pitch with the shortest explanation", 
   "You want the most expensive pitch",
   "You want the most affordable pitch",
-  "You want an experience that looks good on social media",
+  "Lends itself to being featured on social media",
   "Easiest pitch for you to visualize in your mind", 
-  "You want high visitor throughput"  
+  "You want high visitor throughput",
+  "Uses the least space",
+  "Young children would enjoy the experience",
+  "Easy to reproduce and sell to other science museums",
+  "An exhibit that your boss would love"
 ];
 
 

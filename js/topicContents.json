@@ -1,5 +1,5 @@
 {
-  0:{
+  1:{
       topic : "Use AR (Augmented Reality) for an educational experience",
       category : "Technology",
       inspiration : [
@@ -15,7 +15,7 @@
         "img/inspiration/AR_Hololens.png"
       ]
     }, 
-  1:{
+  2:{
       topic : "Design an interactive experience on water resource protection",
       category : "Science",
       inspiration : [
@@ -31,7 +31,7 @@
         "img/inspiration/Water_Protection_Watersheds.png"
       ]
     },
-  2:{
+  3:{
       topic : "Design an experience based on your impression of Pittsburgh",
       category : "Technology",
       inspiration : [
@@ -47,7 +47,7 @@
         "img/inspiration/Pittsburgh_Mister_Rogers__Neighborhood.png"
       ]
     },
-  3:{
+  4:{
       topic : "Use gesture technology to create an experience on weather or climate",
       category : "Technology",
       inspiration : [
@@ -63,7 +63,7 @@
         "img/inspiration/GestureTechnology_Education.png"
       ]
     },
-  4:{
+  5:{
       topic : "Design an experience based on a personal hobby",
       category : "Diversity",
       inspiration : [
@@ -79,7 +79,7 @@
         "img/inspiration/Hobbies_Reading.png"
       ]
     },
-  5:{
+  6:{
       topic : "Use a mobile app in an unconventional way",
       category : "Technology",
       inspiration : [
@@ -95,7 +95,7 @@
         "img/inspiration/GestureTechnology_Samsung.png"
       ]
     },
-  6:{
+  7:{
       topic : "Highlight contributions to science by women and gender minorities",
       category : "Diversity",
       inspiration : [
@@ -111,7 +111,7 @@
         "img/inspiration/Women_Tu_Youyou.png"
       ]
     },
-  7:{
+  8:{
       topic : "Highlight contributions to science by traditionally underrepresented groups",
       category : "Diversity",
       inspiration : [
@@ -127,7 +127,7 @@
         "img/inspiration/Minorities_Subrahmanyan_Chandrasekhar.png"
       ]
     },
-  8:{
+  9:{
       topic : "Highlight a scientist who you believe deserves more recognition",
       category : "Diversity",
       inspiration : [
@@ -143,7 +143,7 @@
         "img/inspiration/Minorities_Mario_Molina.png"
       ]
     },
-  9:{
+  10:{
       topic : "Design an experience to reflect monthly astronomy discoveries",
       category : "Science",
       inspiration : [
@@ -159,7 +159,7 @@
         "img/inspiration/Astronomy_Space_Travel.png"
       ]
     },
-  10:{
+  11:{
       topic : "Increase health knowledge within your community",
       category : "Science",
       inspiration : [
@@ -175,7 +175,7 @@
         "img/inspiration/Health_Communication_Identification.png"
       ]
     },
-  11:{
+  12:{
       topic : "Invite discussion about topics relating to climate change",
       category : "Science",
       inspiration : [
@@ -191,7 +191,7 @@
         "img/inspiration/Health_Communication_Identification.png"
       ]
     },
-  12:{
+  13:{
       topic : "Create an interactive learning experience for large groups",
       category : "Diversity",
       inspiration : [
@@ -207,7 +207,7 @@
         "img/inspiration/Education_Group_Tourists.png"
       ]
     },
-  13:{
+  14:{
       topic : "Create an immersive experiential event",
       category : "Diversity",
       inspiration : [
@@ -223,7 +223,7 @@
         "img/inspiration/ImmersiveExperience_EFX_3000.png"
       ]
     },
-  14:{
+  15:{
       topic : "Create a VR (Virtual Reality) experience on the pandemic",
       category : "Technology",
       inspiration : [
@@ -239,7 +239,7 @@
         "img/inspiration/VR_VRGloves.png"
       ]
     },
-  15:{
+  16:{
       topic : "Combine two different technologies for an interactive experience",
       category : "Technology"
     }

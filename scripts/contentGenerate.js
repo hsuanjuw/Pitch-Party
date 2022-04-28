@@ -244,8 +244,6 @@
 //       category : "Technology"
 //     }
 // }
-const jsonData= require('topicContents.json'); 
-console.log(jsonData);
 
 const refinements = [
   "Understandable for non-English speakers",
@@ -294,11 +292,29 @@ const personalInterests=[
   "An exhibit that your boss would love"
 ];
 
+function loadJSON(callback) {   
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET', 'scripts/topicContents.json', true);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(JSON.parse(xobj.responseText));
+    }
+  };
+  xobj.send(null);  
+}
+
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
 function randomTopic(){
+    var contentDic;
+    loadJSON(function(json) {
+      contentDic = json; // this will log out the json object
+    });
+    alert(contentDic);
     var randomInt = getRandomInt(0, Object.keys(contentDic).length);
     document.getElementById("pitchTopic1").innerHTML = contentDic[randomInt]["topic"];
     document.getElementById("pitchTopic2").innerHTML = contentDic[randomInt]["topic"];

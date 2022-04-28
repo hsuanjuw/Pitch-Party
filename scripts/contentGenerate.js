@@ -295,7 +295,7 @@ const personalInterests=[
 function loadJSON(callback) {   
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open('GET', 'scripts/topicContents.json', true);
+  xobj.open('GET', 'http://hsuanjuw.github.io/scripts/topicContents.json', true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(JSON.parse(xobj.responseText));

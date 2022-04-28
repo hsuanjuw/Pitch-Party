@@ -24,14 +24,33 @@ function rulesClose(){
 }
 
 /* --------------------------------------------------------------
- # Rules - close and show 
+ # Quit 
 ----------------------------------------------------------------*/
 function QuitPopupShow(){
+  onLoadRecordShow();
   show(document.getElementById("quitPopup"));
 }
 
 function QuitPopupClose(){
   hide(document.getElementById("quitPopup"));
+}
+
+function onLoadRecordShow() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.score) {
+      document.getElementById("quit-score").innerHTML = localStorage.score;
+    } else {
+      document.getElementById("quit-score").innerHTML = "0";
+    }
+  }
+
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.round) {
+      document.getElementById("quit-round").innerHTML = localStorage.round;
+    } else {
+      document.getElementById("quit-round").innerHTML  = "0";
+    }
+  } 
 }
 
 

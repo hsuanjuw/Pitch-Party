@@ -343,27 +343,38 @@ function randomContent(){
   document.getElementById("investorTopicCode4").innerHTML = topicCode+refinementNum.toString();
 }
 
+//Designer Page - Search Button Clicked
 function showTopic(){
-  var code1 = document.getElementById('topicCode').value.substring(0,1);
+  var code1 = document.getElementById('topicCode').value.substring(0,1); //Topic code
   var code1Num = code1.charCodeAt(0)-65;
-  var code2 = parseInt(document.getElementById('topicCode').value.substring(1));
-  //Designer Page
-  if(code1Num in contentDic ){
-    if(!(document.getElementById("invalidCodeTxt").classList.contains('hide'))){ 
-      hide(document.getElementById("invalidCodeTxt")); 
+  var code2 = parseInt(document.getElementById('topicCode').value.substring(1)); //Refinement code
+  var invalidCodeTxt = document.getElementById("invalidCodeTxt");
+  var designerPageImgDiv = document.getElementById("designerPageImgDiv");
+
+  if(code1Num in contentDic & code2 < refinements.length){ 
+    if(!(invalidCodeTxt.classList.contains('hide'))){ 
+      hide(invalidCodeTxt); 
     }
     document.getElementById("designTopic").innerHTML = contentDic[code1Num]["topic"];
     document.getElementById("designRefinement").innerHTML = refinements[code2];
-    // document.getElementById("checkDiv").style.display="none";    
+
+    if(!(designerPageImgDiv.classList.contains('hide'))){ 
+      designerPageImgDiv.classList.toggle("hide");
+    }
+    show(document.getElementById("searchResult"));
+  
+    if("inspiration" in contentDic[code1Num]){
+      show(document.getElementById("inspirationBtn"));
+    }
+
   }else{
     show(document.getElementById("invalidCodeTxt"));
   }
-
-  if("inspiration" in contentDic[code1Num]){
-    show(document.getElementById("inspirationBtn"));
-  }
-  show(document.getElementById("designTopicDiv"));
 }
+
+/* --------------------------------------------------------------
+ # DesignerPage
+---------------------------------------------------------------*/
 
 function hintShow(){
   var code1 = document.getElementById('topicCode').value.substring(0,1);

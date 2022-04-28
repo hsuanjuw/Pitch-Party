@@ -71,31 +71,45 @@
 		<h1> You are a Designer.</h1>
 
 		<p class="designer-txt">
-			Hear the Topic Code from the Funder
+			Listen to the Funder for the Topic Code.<br>
+			Search using the Topic Code.
 		</p>
 		<div id="checkDiv">
 			<input type="text" id="topicCode" name="topicCode" placeholder="Enter the code here" onclick="submitCode()"> 
 			<button id="submitCodebtn" onclick= "showTopic();playButtonSound()" class="checkBtn" ><img src="img/Icon/check.png" class="checkIcon"></button>
 		</div>
-		<h4 id="invalidCodeTxt" class="hide">Result: Invalid code</h4>
-		<div id="designTopicDiv" class="design-refinement hide" >
-			<div class="design-refinement-titleDiv">
-				<h4 class="refinement-title"> Pitch Topic & Requirement:</h4>
-				<button onclick= "hintShow();playButtonSound()" id="inspirationBtn" class="hide">
-					<img src="img/Icon/inspiration.png" class="inspirationIcon">
-				</button>
-			</div>			
-			<hr class="seperateLine">
-			<h3 id="designTopic"><b>Highlighting Women in Science and Technology</b></h3>			
-			<hr class="seperateLine">
-			<h3 id="designRefinement"><b>Includes All Age Groups</b></h3>
 
-		</div>		
-		<div class="designerBtn-div">
-			<a href="gamePage2.html"><button class="designer-btn" onclick="playButtonSound();addRound();">Next Round</button></a>
-			<a href="winPage.html"><button class="designer-btn" onclick="playButtonSound();scoring();addRound();">Pitch Accepted</button></a>
+		<!-- Invaid Text -->
+		<h4 id="invalidCodeTxt" class="hide">Result: Invalid code</h4>
+
+		<!-- Mascot img-->
+		<div class="designPage-imgDiv" id="designerPageImgDiv">
+			<img src="img/designer/designer_1.png" class="designerPage-img">		
 		</div>
-		
+
+		<!-- Search Result -->
+		<div id="searchResult" class="hide">
+			<div id="designTopicDiv" class="design-refinement" >
+				<div class="design-refinement-titleDiv">
+					<h4 class="refinement-title"> Pitch Topic & Requirement:</h4>
+					<button onclick= "hintShow();playButtonSound()" id="inspirationBtn" class="hide">
+						<img src="img/Icon/inspiration.png" class="inspirationIcon">
+					</button>
+				</div>			
+				<hr class="seperateLine">
+				<h3 id="designTopic"><b>Highlighting Women in Science and Technology</b></h3>			
+				<hr class="seperateLine">
+				<h3 id="designRefinement"><b>Includes All Age Groups</b></h3>
+			</div>
+			<p class="designer-txt " id="noteTxt">
+				<br>
+				You have 30 second to think.
+			</p>	
+			<div class="designerBtn-div" id="designerBtnDiv">
+				<button class="designer-btn2" onclick="playButtonSound();showDesignerPage2();">Finish Pitching</button>
+			</div>
+		</div>
+	</div>
 	<!-----------------------------------------
 		# hintPage 
 	------------------------------------------->
@@ -149,7 +163,25 @@
 
 		</div>
 	</div>
-		
+
+
+	<!-----------------------------------------
+		# DesignerPage2
+	------------------------------------------->
+	<div id="designerPage2" class="center designerPageText hide">
+		<h1> Wait for the Funder to choose</h1>
+
+		<p class="designer-txt">
+			The Funder will pick their favorite pitch.
+		</p>
+
+		<img src="img/designer/designer_2.png" class="designerPage-img" >	
+
+		<div class="designerBtn-div" id="designerBtnDiv2">
+			<a href="winPage.html"><button class="designer-btn" onclick="playButtonSound();scoring();addRound();">Pitch Accepted</button></a>
+			<a href="gamePage2.html"><button class="designer-btn" onclick="playButtonSound();addRound();">Play Again</button></a>
+		</div>	
+	</div>
 	<div class="foot"></div>
 </body>
 </html>

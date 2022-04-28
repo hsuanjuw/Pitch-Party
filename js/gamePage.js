@@ -65,9 +65,6 @@ function showInvestorPage2(){
   show(document.getElementById("investorPage2"));
 }
 
-/* --------------------------------------------------------------
- # DesignerPage
----------------------------------------------------------------*/
 
 /*--Timer----------------*/
 var second=30;
@@ -126,7 +123,9 @@ function test1(){
   alert(inspirationDic[1]["inspiration"][0]);
 }
 
-
+/* --------------------------------------------------------------
+ # DesignerPage
+---------------------------------------------------------------*/
 //Designer Page Enter to Submit//
 function  submitCode(){
   var input = document.getElementById("topicCode");
@@ -136,6 +135,11 @@ function  submitCode(){
       document.getElementById("submitCodebtn").click();
     }
   });
+}
+
+function showDesignerPage2() {
+  hide(document.getElementById("designerPage1"));
+  show(document.getElementById("designerPage2"));  
 }
 
 /* --------------------------------------------------------------

@@ -1107,15 +1107,19 @@ span.carousel-control-prev-icon {
   # Win page
 --------------------------------------------------*/
 
-#winPage{
-  position:fixed;
-  bottom:0;
+#win-nextBtn{
   height: 20%;
-  left: 0;
-  right: 0;
-  width: 80%;
+  width: 70%;
 }
 
+#win-nextBtn button{
+  margin-top: 5%;
+}
+
+
+/*--------------------------------------------------
+  # Animation
+--------------------------------------------------*/
 
 .index-gif{
   width: 100%;
@@ -1134,23 +1138,11 @@ span.carousel-control-prev-icon {
 }
 
 .win-gif{
-  width: 100%;
-  position:fixed;
-  top:0;
-  left: 0;
-  right: 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .win-gif-div{
   width: 100%;
-}
-
-
-.win-bg {
-  background-image: url("../images/gif/AcceptedPage.gif");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }

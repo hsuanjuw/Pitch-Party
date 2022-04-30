@@ -54,17 +54,22 @@
 				<h3 class="quitText">Are you sure you want to quit the game?</h3>
 				<div class="quit-gameRecord">
 					<h4 class="quit-gameRecord-title">Game Record</h4>
-					<h2 class="record">Rounds: <span id="quit-round"></span></h2>
-					<h2 class="record">Accepted:<span id="quit-score"></span></h2>
+					<div class="quit-recordDiv center">
+						<img src="img/win/gold.png" class="trophy" id="quit-trophyImg">
+						<div>
+							<h2 class="record">Rounds: <span id="quit-round"></span></h2>
+							<h2 class="record">Accepted:<span id="quit-score"></span></h2>	
+						</div>
+					</div>
 				</div>
 				<div class="quitBtnDiv">
 					<button class="generalBtn quitBtn" onclick="QuitPopupClose();playButtonSound()">No</button>
 					<a href="index.html"><button class="generalBtn quitBtn">Yes</button></a>					
 				</div>
-
 		  	</div>
 		</div>
 	</div>
+
 
 	<!-----------------------------------------
 		# WinPage

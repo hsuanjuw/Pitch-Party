@@ -47,6 +47,18 @@ function onLoadRecordShow() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.round) {
       document.getElementById("quit-round").innerHTML = localStorage.round;
+      if(localStorage.round>=5 & localStorage.round<10){
+        document.getElementById("quit-trophyImg").src = "img/win/Bronze.png";
+        show( document.getElementById("quit-trophyImg"));
+      }
+      else if(localStorage.round>=10 & localStorage.round<15){
+        document.getElementById("quit-trophyImg").src = "img/win/Silver.png";
+        show( document.getElementById("quit-trophyImg"));
+      }
+      else if(localStorage.round>=15){
+        document.getElementById("quit-trophyImg").src = "img/win/Gold.png";
+        show( document.getElementById("quit-trophyImg"));
+      }
     } else {
       document.getElementById("quit-round").innerHTML  = "0";
     }

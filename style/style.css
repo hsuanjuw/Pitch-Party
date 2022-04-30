@@ -100,14 +100,6 @@ p, h4{
   width: 10%;
 }
 
-
-.record{
-  margin: 0;
-  font-size: 14px;
-  font-family: "mainFontMedium";
-  color: #4E4E4E;
-}
-
 .homeIcon {
   width: 100%;
   border: 2px solid #29ABE2;
@@ -1146,3 +1138,27 @@ span.carousel-control-prev-icon {
 .win-gif-div{
   width: 100%;
 }
+
+.record{
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  font-family: "mainFontMedium";
+  color: #4E4E4E;
+}
+
+.recordDiv{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.trophy{
+  width: 20%;
+}
+
+.quit-recordDiv{
+  display: flex;
+  justify-content: center;
+  width: 80%;  
+}
+

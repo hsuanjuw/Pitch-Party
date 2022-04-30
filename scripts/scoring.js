@@ -20,6 +20,19 @@ function onLoadScoring() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.round) {
       document.getElementById("round").innerHTML = localStorage.round;
+      if(localStorage.round>=5 & localStorage.round<10){
+        document.getElementById("trophyImg").src = "img/win/Bronze.png";
+        show( document.getElementById("trophyImg"));
+      }
+      else if(localStorage.round>=10 & localStorage.round<15){
+        document.getElementById("trophyImg").src = "img/win/Silver.png";
+        show( document.getElementById("trophyImg"));
+      }
+      else if(localStorage.round>=15){
+        document.getElementById("trophyImg").src = "img/win/Gold.png";
+        show( document.getElementById("trophyImg"));
+      }
+
     } else {
       document.getElementById("round").innerHTML  = 0;
     }

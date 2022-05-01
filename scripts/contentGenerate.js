@@ -58,7 +58,7 @@ let contentDic = {
        ],
       imgs : [
         "img/inspiration/GestureTechnology_Kinect.png",
-        "img/inspiration/GestureTechnology_VRChat.jpg",
+        "img/inspiration/GestureTechnology_VRchat.jpg",
         "img/inspiration/GestureTechnology_Samsung.png",
         "img/inspiration/GestureTechnology_Education.png"
       ]

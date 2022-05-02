@@ -1,15 +1,8 @@
 /*--------------------------------------------------
-# Gerenal
+# General
 --------------------------------------------------*/
-/*icon color:  #A89E9E
-  text color:  #404040 
-  Scicom Blue: 29ABE2
-  Scicom Green: BADD7F 
-  Green button: 
-    border: 2px solid #BADD7F;
-    border-radius: 15px;
-    background-color: #BADD7F;
-    box-shadow: 1px 2px 2px grey; */
+/*Scicom Blue: #29ABE2
+  Scicom Green: #BADD7F  */
 @font-face {
     font-family: mainFontRegular;
     src:url("font/EncodeSans-Regular.ttf");
@@ -211,6 +204,7 @@ p, h4{
 .indexBtn-img{
   width: 100%;
 }
+
 /*--------------------------------------------------
 # Rules
 --------------------------------------------------*/
@@ -506,7 +500,6 @@ p, h4{
   margin-top: 10%;
   color: #29ABE2;
   font-family: "buttonFont";
-
 }
 
 .choiceBtnDiv{
@@ -515,7 +508,7 @@ p, h4{
 
 
 /*--------------------------------------------------
-# Designer Page 1
+# Designer Page
 --------------------------------------------------*/
 .designerPageText{
   position: absolute;
@@ -771,7 +764,6 @@ span.carousel-control-prev-icon {
 /*--------------------------------------------------
 # All Investor Pages
 --------------------------------------------------*/
-
 .investorpages-title{
   font-size: 28px;
   margin-top: 7%;
@@ -788,29 +780,6 @@ span.carousel-control-prev-icon {
   background-size: cover;
   background-attachment: fixed;
 }
-
-/*.investor-bg-sci {
-  background-image: url("../img/investor/investor_bg_sci.png");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}*/
-
-
-/*.pitchTopic-content{
-  background-color: #f1f1f1;
-  width: 80%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 3%;
-  padding-right: 3%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid #f1f1f1;
-  border-radius: 5px;
-}*/
 
 .titleTxt{
   margin-top: 3%;
@@ -839,8 +808,6 @@ span.carousel-control-prev-icon {
   width: 100%;
   height: 30%; 
 }
-
-
 
 #investorTopicCodeDiv{
   background-color: #BADD7F; /* For browsers that do not support gradients */
@@ -900,14 +867,6 @@ span.carousel-control-prev-icon {
   margin-top: 7%;  
 }
 
-/*#pitchTopic-img {
-  width: 100%;
-}
-
-#requirement-img {
-  width: 100%;
-}
-*/
 /*--------------------------------------------------
  # Investor Page 2
 --------------------------------------------------*/
@@ -939,7 +898,6 @@ span.carousel-control-prev-icon {
   border: none;
   background-color: transparent;
 }
-
 
 .refinement{
   background-color: rgb(241, 241, 241, 0.5);
@@ -990,12 +948,12 @@ span.carousel-control-prev-icon {
   margin-left: auto;
 }
 
-
 #pitchTopic2, #pitchRefinement2, #pitchTopic3, #pitchRefinement3,#pitchTopic4,#pitchRefinement4, #designTopic, #designRefinement, #personalInterest1 {
   font-size: 20px;
   font-family: "mainFontBold";
   color: #4E4E4E;
 }
+
 /*--------------------------------------------------
   # Investor Page 3
 --------------------------------------------------*/
@@ -1075,27 +1033,6 @@ span.carousel-control-prev-icon {
 }
 
 /*--------------------------------------------------
-  # Rules Animation
---------------------------------------------------*/
-#animation_container {
-  position:absolute;
-  margin:0;
-  right:0;
-  bottom:0;
-  height: 100%;
-  width: 100%;
-}
-
-#animation_container_2 {
-  position:absolute;
-  margin:0;
-  right:0;
-  top:0;
-  height: 100%;
-  width: 100%;
-}
-
-/*--------------------------------------------------
   # Win page
 --------------------------------------------------*/
 
@@ -1110,9 +1047,8 @@ span.carousel-control-prev-icon {
 
 
 /*--------------------------------------------------
-  # Animation
+  # Animation (gif)
 --------------------------------------------------*/
-
 .index-gif{
   width: 100%;
   position:fixed;
@@ -1139,6 +1075,9 @@ span.carousel-control-prev-icon {
   width: 100%;
 }
 
+/*--------------------------------------------------
+  # Record
+--------------------------------------------------*/
 .record{
   margin: 0 0 0 15px;
   font-size: 14px;
@@ -1161,4 +1100,3 @@ span.carousel-control-prev-icon {
   justify-content: center;
   width: 80%;  
 }
-

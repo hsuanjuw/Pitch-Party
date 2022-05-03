@@ -127,22 +127,6 @@ let contentDic = {
         "img/inspiration/Minorities_Subrahmanyan_Chandrasekhar.png"
       ]
     },
-  8:{
-      topic : "Highlight a scientist who you believe deserves more recognition",
-      category : "Diversity",
-      inspiration : [
-        "Chien-Shiung Wu (1912 - 1997) was a Chinese American physicist who worked on the Manhattan Project.",
-        "Katherine Johnson (1918 - 2020) was an African American mathematician who worked on the space program at NASA.",
-        "Roger Y Tsien (1952 - 2016) was a Chinese American biochemist and Nobel Prize winner who worked with fluorescent proteins.",
-        "Mario J Molina (1943 - 2020) was a Mexican environmental chemist and Nobel Prize winner who studied Earth’s ozone layer."      
-       ],
-      imgs : [
-        "img/inspiration/Women_Chien-Shiung_Wu.png",
-        "img/inspiration/Women_Katherine_Johnson.png",
-        "img/inspiration/Minorities_Roger_Tsien.jpg",
-        "img/inspiration/Minorities_Mario_Molina.png"
-      ]
-    },
   9:{
       topic : "Design an experience to reflect monthly astronomy discoveries",
       category : "Science",
@@ -223,7 +207,27 @@ let contentDic = {
         "img/inspiration/ImmersiveExperience_EFX_3000.png"
       ]
     },
-  14:{
+  15:{
+      topic : "Combine two different technologies for an interactive experience",
+      category : "Technology"
+    },
+  16:{
+      topic : "Highlight a scientist who you believe deserves more recognition",
+      category : "Diversity",
+      inspiration : [
+        "Chien-Shiung Wu (1912 - 1997) was a Chinese American physicist who worked on the Manhattan Project.",
+        "Katherine Johnson (1918 - 2020) was an African American mathematician who worked on the space program at NASA.",
+        "Roger Y Tsien (1952 - 2016) was a Chinese American biochemist and Nobel Prize winner who worked with fluorescent proteins.",
+        "Mario J Molina (1943 - 2020) was a Mexican environmental chemist and Nobel Prize winner who studied Earth’s ozone layer."      
+       ],
+      imgs : [
+        "img/inspiration/Women_Chien-Shiung_Wu.png",
+        "img/inspiration/Women_Katherine_Johnson.png",
+        "img/inspiration/Minorities_Roger_Tsien.jpg",
+        "img/inspiration/Minorities_Mario_Molina.png"
+      ]
+    },
+  17:{
       topic : "Create a VR (Virtual Reality) experience on the pandemic",
       category : "Technology",
       inspiration : [
@@ -238,10 +242,6 @@ let contentDic = {
         "img/inspiration/VR_TheVirtuixOmni.png",
         "img/inspiration/VR_VRGloves.png"
       ]
-    },
-  15:{
-      topic : "Combine two different technologies for an interactive experience",
-      category : "Technology"
     }
 }
 
@@ -294,11 +294,14 @@ const personalInterests=[
 
 
 function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min) + min); 
 }
 
 function randomTopic(){
-    var randomInt = getRandomInt(0, Object.keys(contentDic).length);
+    var randomInt = getRandomInt(0, Object.keys(contentDic).length+2);
+    while(randomInt==8 ||randomInt==14 ){
+      randomInt = getRandomInt(0, Object.keys(contentDic).length);
+    }
     document.getElementById("pitchTopic1").innerHTML = contentDic[randomInt]["topic"];
     document.getElementById("pitchTopic2").innerHTML = contentDic[randomInt]["topic"];
     document.getElementById("pitchTopic3").innerHTML = contentDic[randomInt]["topic"];

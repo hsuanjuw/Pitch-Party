@@ -117,11 +117,14 @@
 		<!-- Timer -->
 		<div class="timerBlock">
 			<h1 id="timerText">0:30</h1>
-			<button id="timerBtn" class=" " onclick="startTimer();playButtonSound()">
+			<button id="timerBtn" class="timerBtns " onclick="startTimer();playButtonSound()">
 				<img src="img/Icon/play.png" class="timerBtn-img">
 			</button>
-			<button id="retimerBtn" class="hide" onclick="pauseTimer();playButtonSound()">
+			<button id="pausetimerBtn" class="timerBtns hide" onclick="pauseTimer();playButtonSound()">
 				<img src="img/Icon/pause.png" class="timerBtn-img">
+			</button>
+			<button id="retimerBtn" class="timerBtns hide" onclick="restartTimer();playButtonSound()">
+				<img src="img/Icon/reset.png" class="timerBtn-img">
 			</button>
 		</div>
 		<!-- End of Timer -->

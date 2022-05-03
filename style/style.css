@@ -900,7 +900,7 @@ span.carousel-control-prev-icon {
   width: 100%;
 }
 
-#timerBtn, #retimerBtn{
+.timerBtns{
   width: 20%;
   border: none;
   background-color: transparent;

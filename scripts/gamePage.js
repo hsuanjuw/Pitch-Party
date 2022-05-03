@@ -85,7 +85,7 @@ var clock;
 function startTimer(){
   clock=setInterval(timer,1000);
   hide(document.getElementById("timerBtn"));
-  document.getElementById("retimerBtn").style.display="inline-block";
+  document.getElementById("pausetimerBtn").style.display="inline-block";
   //document.getElementById("investorPage2Btn").style.display="inline-block";  
 }
 
@@ -103,6 +103,8 @@ function timer(){
   second--;
   if(second<0){
     stopTimer();
+    document.getElementById("pausetimerBtn").style.display="none";
+    show(document.getElementById("retimerBtn"));
   }
 }
 
@@ -110,12 +112,15 @@ function restartTimer(){
   stopTimer();
   second=30;
   clock=setInterval(timer,1000);
+  hide(document.getElementById("retimerBtn"));
+  document.getElementById("pausetimerBtn").style.display="inline-block";
 }
 
 function pauseTimer(){
   stopTimer();
   show(document.getElementById("timerBtn"));
-  document.getElementById("retimerBtn").style.display="none";
+  document.getElementById("pausetimerBtn").style.display="none";
+  //hide(document.getElementById("pausetimerBtn"))
 }
 
 /*--End Timer----------------*/

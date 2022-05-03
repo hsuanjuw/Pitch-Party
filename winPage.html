@@ -10,13 +10,17 @@
 	<title></title>
 </head>
 <body class="investor-bg" onload="onLoadScoring();" style="margin: 0;">
-	<div class="header" style="z-index:100;">
-		<button onclick="rulesShow();playButtonSound()"  style="z-index:100;"><img src="img/Icon/question.png" class="homeIcon"></button>
-		<div class="center">
-			<h2 class="record" style="z-index:100;">Rounds: <span id="round"></span></h2>
-			<h2 class="record" style="z-index:100;">Accepted: <span id="score"></span></h2>
+	<div class="header">
+		<button onclick="rulesShow();playButtonSound()"><img src="img/Icon/question.png" class="homeIcon"></button>
+		<div class="recordDiv">
+			<img src="img/win/Gold.png" class="trophy hide" id="trophyImg">
+			<div class="">
+				<h2 class="record">Rounds: <span id="round"></span></h2>
+				<h2 class="record">Accepted: <span id="score"></span></h2>
+			</div>			
 		</div>
-		<button onclick="QuitPopupShow();playButtonSound()" style="z-index:100;"><img src="img/Icon/quit.png" class="homeIcon"></button> 
+
+		<button onclick="QuitPopupShow();playButtonSound()"><img src="img/Icon/quit.png" class="homeIcon"></button> 
 	</div>
 
 	<!-----------------------------------------

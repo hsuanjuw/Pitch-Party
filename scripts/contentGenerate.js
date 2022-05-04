@@ -3,9 +3,9 @@ let contentDic = {
       topic : "Use AR (Augmented Reality) for an educational experience",
       category : "Technology",
       inspiration : [
-        "Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information.",
-        "Mobile phone manufacturers like Apple are combining hardware with machine learning and cutting‑edge developer tools to enable realistic and engaging AR experiences.",
-        "Projected AR is technology that directly overlays digitals projections onto the physical world. Unlike smartphone or wearable AR, projected AR does not typically require a device to mediate and project imagery.",
+        "Augmented reality (AR) is an interactive experience of a real-world environment where real objects are enhanced by computer-generated information.",
+        "Mobile phones from Apple and Android are combining hardware with machine learning and developer tools to enable engaging AR experiences.",
+        "Projected AR is a technology that overlays digitals projections onto the physical world. This form of AR doesn’t require a personal device to project imagery.",
         "Hololens is a pair of mixed reality smart glasses developed and manufactured by Microsoft."
       ],
       imgs : [
@@ -35,10 +35,10 @@ let contentDic = {
       topic : "Design an experience based on your impression of Pittsburgh",
       category : "Technology",
       inspiration : [
-        "Pittsburgh is the “City of Bridges” with 446 bridges.",
+        "Pittsburgh is called the City of Bridges. The city is home to 446 bridges.",
         "Emoticons were invented by Scott Fahlman at Carnegie Mellon University in 1980.",
-        "The Polio vaccine was invented by Dr. Jonas Salk in Pittsburgh in 1950. ",
-        "Mister Rogers’ Neighborhood was produced by WQED in Pittsburgh. "      
+        "The Polio vaccine was invented by Dr. Jonas Salk in Pittsburgh in 1950.",
+        "Mister Rogers’ Neighborhood was produced by WQED in Pittsburgh."      
        ],
       imgs : [
         "img/inspiration/Pittsburgh_Bridges.png",
@@ -51,10 +51,10 @@ let contentDic = {
       topic : "Use gesture technology to create an experience on weather or climate",
       category : "Technology",
       inspiration : [
-        "Kinect allows a user to move their body to control games, movies, and more. It makes users feel immersed in a simulated world, via hardware (headsets) and software.",
+        "Kinect allows a user to move their body to control games, movies, and more. It makes users feel immersed in a simulated world.",
         "Full Body Tracking makes virtual celebrities or VR avatars possible. It gives people a way to play the role of a digital character.",
-        "Gesture Tracking is already implemented in devices like phones. With a few hand movements, you can tell your phone to turn on, mute your alerts, or take a screenshot.",
-        "Researchers are using gesture technology to discover how body movements can impact on the potential use in Higher Education.  "      
+        "Gesture tracking is already implemented in devices like phones. Hand movements can turn on a phone, mute alerts, or take a screenshot.",
+        "Researchers are conducting research on gesture technology to understand the technologies’ potential uses in education."      
        ],
       imgs : [
         "img/inspiration/GestureTechnology_Kinect.png",
@@ -67,10 +67,10 @@ let contentDic = {
       topic : "Design an experience based on a personal hobby",
       category : "Diversity",
       inspiration : [
-        "Cooking",
-        "Hiking",
-        "Gardening",
-        "Reading"      
+        "Cooking produces some tasty results!",
+        "Hiking is a great way to get out and exercise.",
+        "Gardening is a good fit for any plant or flower lover.",
+        "Reading is an excellent way to pass time."      
        ],
       imgs : [
         "img/inspiration/Hobbies_Cooking.png",
@@ -84,9 +84,9 @@ let contentDic = {
       category : "Technology",
       inspiration : [
         "Both Android devices and iPhones incorporate haptic feedback. Haptics allow for users to receive touch feedback, typically in the form of vibration.",
-        "The Magnifier is an iPhone accessibility tool found in the Control Center. Its features include magnification, color filters, and displaying your distance from another person.",
-        "Measure is an app installed on most iPhones. It allows users to automatically or manually measure objects and distances.",
-        "Gesture Tracking is already implemented in devices like phones. With a few hand movements, you can tell your phone to turn on, mute your alerts, or take a screenshot."      
+        "The Magnifier is an iPhone accessibility tool which has magnification, color filters, and distance calculation features. Similar apps exist for Android.",
+        "Measurement apps are available on both iPhone and Android. They allow users to automatically or manually measure objects and distances.",
+        "Gesture tracking is already implemented in devices like phones. Hand movements can turn on a phone, mute alerts, or take a screenshot."      
        ],
       imgs : [
         "img/inspiration/Mobile_Haptics.png",
@@ -115,15 +115,15 @@ let contentDic = {
       topic : "Highlight contributions to science by traditionally underrepresented groups",
       category : "Diversity",
       inspiration : [
-        "George Washington Carver (1864–1943) is an African American scientist who studied agricultural production and promoted new farming methods.",
-        "Mario J Molina (1943 - 2020) was a Mexican environmental chemist and Nobel Prize winner who studied Earth’s ozone layer.",
-        "Roger Y Tsien (1952 - 2016) was a Chinese American biochemist and Nobel Prize winner who worked with fluorescent proteins.",
+        "George Washington Carver (1864–1943) was an African American scientist who studied agricultural production and promoted new farming methods.",
+        "Mario Molina (1943–2020) was a Mexican environmental chemist and Nobel Prize winner who studied Earth’s ozone layer.",
+        "Roger Tsien (1952–2016) was a Chinese American biochemist and Nobel Prize winner who worked with fluorescent proteins.",
         "Subrahmanyan Chandrasekhar (1910 - 1995) was an Indian American astrophysicist and Nobel Prize winner who studied the evolution of stars."      
        ],
       imgs : [
         "img/inspiration/Minorities_George_Washington_Carver.png",
         "img/inspiration/Minorities_Mario_Molina.png",
-        "img/inspiration/Minorities_Roger_Tsien.jpg",
+        "img/inspiration/Minorities_Roger_Tsien.png",
         "img/inspiration/Minorities_Subrahmanyan_Chandrasekhar.png"
       ]
     },
@@ -179,10 +179,10 @@ let contentDic = {
       topic : "Create an interactive learning experience for large groups",
       category : "Diversity",
       inspiration : [
-        "College student groups",
-        "Elementary school field trip",
-        "Senior group tours",
-        "Tourists"      
+        "Create an interactive learning experience for college students.",
+        "Create an interactive learning experience for an elementary school field trip.",
+        "Create an interactive learning experience for senior groups.",
+        "Create an interactive learning experience for tourists."      
        ],
       imgs : [
         "img/inspiration/Education_Group_College.png",
@@ -195,21 +195,33 @@ let contentDic = {
       topic : "Create an immersive experiential event",
       category : "Diversity",
       inspiration : [
-        "Projected AR is technology that directly overlays digitals projections onto the physical world. Unlike smartphone or wearable AR, projected AR does not typically require a device to mediate and project imagery.",
-        "Mixed reality (MR) is the merging of real and virtual worlds to produce new environments and visualizations, where physical and digital objects co-exist and interact in real time.",
-        "VR Gloves provide hand tracking and haptic feedback to give users a more immersive experience",
-        "A 42 person moving ride uses 11- 8,000 lumen laser projectors with ultra short throw lenses to take you on a journey through the oil drilling process."      
+        "Projected AR is a technology that overlays digitals projections onto the physical world. Unlike other AR types, projected AR doesn’t require a personal device to project imagery.",
+        "Mixed reality (MR) merges real and digital environments in order to create spaces where physical and digital objects may exist and interact with one another.",
+        "VR Gloves provide hand tracking and haptic feedback to give users a more immersive experience.",
+        "The EFX 3000 is a 42 person moving ride that uses laser projectors to take visitors on a journey through the oil drilling process."      
        ],
       imgs : [
         "img/inspiration/AR_Projected_AR.png",
-        "img/inspiration/AR_Mixed_Reality.png",
+        "img/inspiration/ImmersiveExperience_Mixed_Reality.png",
         "img/inspiration/VR_VRGloves.png",
         "img/inspiration/ImmersiveExperience_EFX_3000.png"
       ]
     },
   15:{
       topic : "Combine two different technologies for an interactive experience",
-      category : "Technology"
+      category : "Technology",
+      inspiration : [
+        "Mobile phones from Apple and Android are combining hardware with machine learning and developer tools to enable realistic and engaging AR experiences.",
+        "Kinect allows a user to move their body to control games, movies, and more. It makes users feel immersed in a simulated world.",
+        "Both Android devices and iPhones incorporate haptic feedback. Haptics allow for users to receive touch feedback, typically in the form of vibration.",
+        "Oculus (Meta) Quest 2 is one of the best selling VR Headsets. It aims to create virtual social spaces."      
+       ],
+      imgs : [
+        "img/inspiration/AR_Mobile_AR.png",
+        "img/inspiration/GestureTechnology_Kinect.png",
+        "img/inspiration/Mobile_Haptics.png",
+        "img/inspiration/VR_Quest2.png"
+      ]
     },
   16:{
       topic : "Highlight a scientist who you believe deserves more recognition",
@@ -223,7 +235,7 @@ let contentDic = {
       imgs : [
         "img/inspiration/Women_Chien-Shiung_Wu.png",
         "img/inspiration/Women_Katherine_Johnson.png",
-        "img/inspiration/Minorities_Roger_Tsien.jpg",
+        "img/inspiration/Minorities_Roger_Tsien.png",
         "img/inspiration/Minorities_Mario_Molina.png"
       ]
     },
@@ -232,7 +244,7 @@ let contentDic = {
       category : "Technology",
       inspiration : [
         "Virtual reality (VR) is the experience where users feel immersed in a simulated world, via hardware (headsets) and software.",
-        "Oculus Quest 2 is one of the best selling VR Headsets. It aims to create virtual social spaces.",
+        "Oculus (Meta) Quest 2 is one of the best selling VR Headsets. It aims to create virtual social spaces. ",
         "The Virtuix Omni is an omnidirectional treadmill simulator for virtual reality games and other applications. It uses a platform to simulate locomotion i.e. the motion of walking.",
         "VR Gloves provide hand tracking and haptic feedback to give users a more immersive experience."      
        ],
@@ -248,7 +260,7 @@ let contentDic = {
 const refinements = [
   "Understandable for non-English speakers",
   "Includes all age groups", 
-  "Accessible for physically disabled individuals",
+  "Accessible for individuals with disabilities",
   "Easy to maintain social distance",
   "Acts as a local landmark",
   "Can be a traveling exhibit",
@@ -288,7 +300,7 @@ const personalInterests=[
   "You want high visitor throughput",
   "Uses the least space",
   "Young children would enjoy the experience",
-  "Easy to reproduce and sell to other science museums",
+  "Easy to reproduce and sell to other science centers",
   "An exhibit that your boss would love"
 ];
 
